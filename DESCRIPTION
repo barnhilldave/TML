@@ -7,4 +7,19 @@ Description: Machine learning tools applied to tropical geometry in R.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    MASS,
+    ape,
+    phangorn,
+    lpSolve,
+    lpSolveAPI,
+    miscTools,
+    Matrix,
+    rcdd,
+    rgl,
+    magick,
+    gtools,
+    combinat,
+    RcppAlgos,
+    Rfast
 RoxygenNote: 7.2.3
