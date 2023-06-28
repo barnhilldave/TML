@@ -33,7 +33,7 @@ This function samples points on a tropical line segment about a location paramet
 D <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
 x0 <- c(0,0,0)
 mu<-c(0,5,5)
-sd<-1
+s<-1
 n<-500
 trop.Gaussian.MH(D, x0, mu, s, n, I=50)
 trop.Gaussian.MH.square(D, x0,mu, s, n, I=50)
