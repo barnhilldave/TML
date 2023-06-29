@@ -14,9 +14,9 @@ TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 1, M, S)
 
 \item{I}{number of states in Markov chain}
 
-\item{mu}{location parameter; numeric vector indicating centroid}
+\item{M}{location parameter; numeric vector indicating centroid}
 
-\item{stdev}{scale parameter; in terms of tropical distance}
+\item{S}{scale parameter; in terms of tropical distance}
 }
 \value{
 next sampled point from the tropical polytope

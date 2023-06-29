@@ -7,7 +7,7 @@
 rounding(P)
 }
 \arguments{
-\item{A}{Matrix of points defining a tropical simplex. Rows are the points.}
+\item{P}{Matrix of points defining a tropical simplex. Rows are the points.}
 }
 \value{
 Matrix of points defining only the full-dimensional element (the trunk) of a tropical polytope. Rows are points.

@@ -7,7 +7,7 @@
 tdets(P)
 }
 \arguments{
-\item{A}{Matrix of points defining a tropical polytope. Rows are the points.}
+\item{P}{Matrix of points defining a tropical polytope. Rows are the points.}
 }
 \value{
 List containing the value of the determinant and reordered matrix P.

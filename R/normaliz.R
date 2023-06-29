@@ -1,8 +1,8 @@
-#' Normalize a point in the tropical projective torus
+#' Normalize a point or set of points in the tropical projective torus
 #'
-#' This function normalizes a point in the tropical projective torus by making the first coordinate zero.
+#' This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero.
 #'
-#' @param D Point in the tropical projective torus
+#' @param D Vector in the tropical projective torus or a matrix of points in the tropical projective torus.  For matrices, rows are the points.
 #' @return A single or set of normalized points with the first coordinate zero.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name normalize
@@ -23,9 +23,9 @@ normaliz.vector <- function(D){
 }
 #' @export
 #' @rdname normalize
-normaliz.vectors <- function(DD){ ## DD is a matrix
-d <- dim(DD)
-D1 <- DD
+normaliz.vectors <- function(D){ ## D is a matrix
+d <- dim(D)
+D1 <- D
 for(i in 1:d[1])
   D1[i, ] <- D1[i, ] - rep(D1[i, 1], d[2])
 return(D1)
@@ -33,9 +33,9 @@ return(D1)
 
 #' @export
 #' @rdname normalize
-normaliz.polytope <- function(M){
-  d <- dim(M)
+normaliz.polytope <- function(D){
+  d <- dim(D)
   for(i in 1:d[1])
-    M[i, ] <- normaliz.vector(M[i,])
-  return(M)
+    D[i, ] <- normaliz.vector(D[i,])
+  return(D)
 }

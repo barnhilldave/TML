@@ -2,24 +2,22 @@ Package: TML
 Type: Package
 Title: Tropical Geometry Tools for Machine Learning
 Version: 0.1.0
-Author:person("David", "Barnhill", email = "hadley@posit.co",role = c("aut", "cre"))
+Authors@R: c(person('David', 'Barnhill', email='david.barnhill@nps.edu',role = c('aut','cre')),person('Ruriko', 'Yoshida', role = c('aut')),person('Keiji','Miura',role=c('aut')))
 Description: Machine learning tools applied to tropical geometry in R.
 License: MIT + file LICENSE
+Imports: MASS, 
+         Matrix, 
+         RcppAlgos, 
+         Rfast, 
+         combinat, 
+         gtools,
+         lpSolve, 
+         lpSolveAPI, 
+         magick, 
+         miscTools, 
+         phangorn, 
+         rcdd,
+         rgl
 Encoding: UTF-8
 LazyData: true
-Imports:
-    MASS,
-    ape,
-    phangorn,
-    lpSolve,
-    lpSolveAPI,
-    miscTools,
-    Matrix,
-    rcdd,
-    rgl,
-    magick,
-    gtools,
-    combinat,
-    RcppAlgos,
-    Rfast
 RoxygenNote: 7.2.3

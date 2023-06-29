@@ -2,7 +2,7 @@
 #'
 #' This function removes all tentacles from a tropical simplex. The remaining portion is a full-dimensional tropical polytope known as the trunk of the tropical polytope.
 #'
-#' @param A Matrix of points defining a tropical simplex. Rows are the points.
+#' @param P Matrix of points defining a tropical simplex. Rows are the points.
 #' @return Matrix of points defining only the full-dimensional element (the trunk) of a tropical polytope. Rows are points.
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
@@ -11,18 +11,6 @@
 #' BP<-min_enc_ball(P)
 #' RP<-rounding(P)
 #' BRP<-min_enc_ball(RP)
-
-############Rounding Algorithm for a tropical polytope###################
-## Author :  David Barnhill                                            ##
-## Date   :  January 8th 2023                                          ##
-## Program:  This code enumerates the pseudo-vertices of the boundary  ##
-##           of a full-dimensional sector of a tropical polytope.      ##
-## Input  :  A matrix, V, of vertices defining the tropical convex hull##
-##           of a polytope P.                                          ##
-## Output :  matrix of pseudo-vertices for the full dimensional part   ##
-##           of a tropical polytope.                                   ##
-## Execute:  type in R as                                              ##
-#########################################################################
 
 rounding<-function(P){
   PP_star<-tdets(P)

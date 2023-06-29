@@ -10,7 +10,7 @@
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples
-#'x0 <-c()
+#'x0 <-c(9,8,7)
 #'n<-3
 #'
 #'Ultrametrics.HAR(x0, n, I = 50, h = 1)

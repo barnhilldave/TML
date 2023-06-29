@@ -5,22 +5,22 @@
 \alias{normaliz.vector}
 \alias{normaliz.vectors}
 \alias{normaliz.polytope}
-\title{Normalize a point in the tropical projective torus}
+\title{Normalize a point or set of points in the tropical projective torus}
 \usage{
 normaliz.vector(D)
 
-normaliz.vectors(DD)
+normaliz.vectors(D)
 
-normaliz.polytope(M)
+normaliz.polytope(D)
 }
 \arguments{
-\item{D}{Point in the tropical projective torus}
+\item{D}{Vector in the tropical projective torus or a matrix of points in the tropical projective torus.  For matrices, rows are the points.}
 }
 \value{
 A single or set of normalized points with the first coordinate zero.
 }
 \description{
-This function normalizes a point in the tropical projective torus by making the first coordinate zero.
+This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero.
 }
 \examples{
 D <-c(8,4,2)

@@ -7,6 +7,7 @@
 #' @return 3-D rendering of a tropical polytope.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name draw.tpolytope
+#' @import rgl
 #' @examples
 #'D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)
 #'c<-'blue'
@@ -50,9 +51,7 @@ pre.draw.tpolytope.3d <- function(D, v,c){
              y=as.vector(t(seg[1:(counter-1), c(2,5)])),
              z=as.vector(t(seg[1:(counter-1), c(3,6)])), col = c, lwd = .2,tcl=-.9)
   for(i in 1:v)
-    spheres3d(D[i, 2:4], r = 0.1, color = "black")
-  #rgl.points(D[i, 2:4], color = "blue", size = 10)
-
+    spheres3d(D[i, 2:4], radius = 0.1, color = "black")
   axes3d()
   title3d(xlab="X",ylab="Y",zlab="Z")
 }

@@ -5,8 +5,8 @@
 #' @param D_s matrix of vertices of a tropical simplex; each row is a vertex.
 #' @param x0 initial point for sampler, numeric vector
 #' @param I number of states in Markov chain
-#' @param mu location parameter; numeric vector indicating centroid
-#' @param stdev scale parameter; in terms of tropical distance
+#' @param M location parameter; numeric vector indicating centroid
+#' @param S scale parameter; in terms of tropical distance
 #' @return next sampled point from the tropical polytope
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @name tropical.Gaussian
