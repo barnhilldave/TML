@@ -1,10 +1,12 @@
 Package: TML
 Type: Package
-Title: Tropical Geometry Tools for Machine Learning
+Title: Tropical Geometry Tools for Machine Learning in R
 Version: 0.1.0
 Authors@R: c(person('David', 'Barnhill', email='david.barnhill@nps.edu',role = c('aut','cre')),person('Ruriko', 'Yoshida', role = c('aut')),person('Keiji','Miura',role=c('aut')))
 Description: Machine learning tools applied to tropical geometry in R.
 License: MIT + file LICENSE
+Depends:
+        R (>= 3.5.0)
 Imports: MASS, 
          Matrix, 
          RcppAlgos, 
@@ -17,7 +19,10 @@ Imports: MASS,
          miscTools, 
          phangorn, 
          rcdd,
-         rgl
+         rgl,
+         ape,
+         phytools,
+         maps
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
