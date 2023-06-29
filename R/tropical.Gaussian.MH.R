@@ -1,4 +1,4 @@
-#' Gaussian-like sampling from Gaussian using Metropolis filter
+#' Gaussian-like sampling using Metropolis filter
 #'
 #' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance.
 #'

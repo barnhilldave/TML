@@ -4,7 +4,7 @@
 \alias{tropical.Gaussian.MH}
 \alias{trop.Gaussian.MH}
 \alias{trop.Gaussian.MH.square}
-\title{Gaussian-like sampling from Gaussian using Metropolis filter}
+\title{Gaussian-like sampling using Metropolis filter}
 \usage{
 trop.Gaussian.MH(D, x0, mu, s, n, I = 50)
 
