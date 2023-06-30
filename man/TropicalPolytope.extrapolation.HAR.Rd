@@ -2,7 +2,7 @@
 % Please edit documentation in R/Tropical.HAR.w.extrapolation.R
 \name{TropicalPolytope.extrapolation.HAR}
 \alias{TropicalPolytope.extrapolation.HAR}
-\title{Uniform sampling from a tropical simplex}
+\title{Vertex HAR with extrapolation MCMC with uniform target distribution.}
 \usage{
 TropicalPolytope.extrapolation.HAR(D_s, x0, I = 1)
 }

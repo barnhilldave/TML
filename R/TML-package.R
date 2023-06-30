@@ -11,6 +11,8 @@
 #' @importFrom lpSolve lp lp.assign
 #' @importFrom miscTools symMatrix
 #' @importFrom cluster diana
+#' @importFrom grDevices rainbow
+#' @importFrom graphics lines
 #' @rawNamespace import(ape, except = yule)
 #' @name TML
 #' @aliases TML package-TML

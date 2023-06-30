@@ -1,4 +1,4 @@
-#' Uniform sampling from a tropical simplex
+#' Vertex HAR with extrapolation MCMC with uniform target distribution.
 #'
 #' This function samples points uniformly the space defined by a tropical simplex.
 #'
