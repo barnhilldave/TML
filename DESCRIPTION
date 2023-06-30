@@ -22,7 +22,8 @@ Imports: MASS,
          rgl,
          ape,
          phytools,
-         maps
+         maps,
+         cluster
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3

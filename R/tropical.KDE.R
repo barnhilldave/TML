@@ -32,7 +32,9 @@
 #' return(D)
 #' }
 
-#' D <- rbind(D1, D2[1,])
+#' T1<-Sim_Trees1
+#' T2<-Sim_Trees2
+#' D <- rbind(T1, T2[1,])
 #' T <- dim(D)[1]
 #' X <- 1:T
 #' M <- pw.trop.dist(D, D)

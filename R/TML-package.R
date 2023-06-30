@@ -6,10 +6,11 @@
 #' @import MASS lpSolveAPI Matrix rcdd combinat rgl magick gtools RcppAlgos Rfast phytools maps
 #' @importFrom graphics points polygon
 #' @importFrom Rfast yule
-#' @importFrom stats runif rnorm cophenetic quantile
+#' @importFrom stats runif rnorm cophenetic quantile cutree
 #' @importFrom phangorn upgma
 #' @importFrom lpSolve lp lp.assign
 #' @importFrom miscTools symMatrix
+#' @importFrom cluster diana
 #' @rawNamespace import(ape, except = yule)
 #' @name TML
 #' @aliases TML package-TML

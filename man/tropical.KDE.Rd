@@ -42,7 +42,9 @@ for(i in 1:d1[1])
     D[i, j] <- trop.dist(D1[i, ], D2[j, ])
 return(D)
 }
-D <- rbind(D1, D2[1,])
+T1<-Sim_Trees1
+T2<-Sim_Trees2
+D <- rbind(T1, T2[1,])
 T <- dim(D)[1]
 X <- 1:T
 M <- pw.trop.dist(D, D)

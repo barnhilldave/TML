@@ -7,6 +7,7 @@
 #' @param s Bandwidth parameter based on tropical distance.
 #' @return Density value based on sampled point x.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#' @noRd
 
 kernel.ultrametric <- function(x, mu, s){
   return(exp(-(trop.dist(mu, x)/s)))

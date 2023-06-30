@@ -22,8 +22,8 @@ Point in the space of ultrametrics over n leaves.
 This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves.
 }
 \examples{
-x0 <-c(9,8,7)
-n<-3
+x0 <-Sim_Trees1[1,]
+n<-10
 
 Ultrametrics.HAR(x0, n, I = 50, h = 1)
 
