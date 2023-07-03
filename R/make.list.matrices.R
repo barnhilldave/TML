@@ -1,9 +1,9 @@
-#' Make a list from matrices.
+#' Make a list from matrices
 #'
 #'
-#' @param D Matrix of points defining a tropical polytope.  Rows are the tropical points.
-#' @param index List of indices separated by cluster assignment.
-#' @return List of matrices
+#' @param D matrix of points defining a tropical polytope; rows are the tropical points
+#' @param index list of indices separated by cluster assignment
+#' @return list of matrices
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @noRd
 

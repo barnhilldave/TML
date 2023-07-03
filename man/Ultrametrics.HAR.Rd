@@ -7,19 +7,19 @@
 Ultrametrics.HAR(x0, n, I = 1, h = 1)
 }
 \arguments{
-\item{x0}{A phylogenetic tree}
+\item{x0}{an equidistant tree defined as ultrametric}
 
-\item{n}{Number of leaves for the equidistant tree.}
+\item{n}{number of leaves for the equidistant tree}
 
-\item{I}{Number of states in the Markov chain.}
+\item{I}{number of states in the Markov chain}
 
-\item{h}{Height of phylogenetic tree.}
+\item{h}{height of phylogenetic tree}
 }
 \value{
-Point in the space of ultrametrics over n leaves.
+point in the space of ultrametrics over n leaves
 }
 \description{
-This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves.
+This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves
 }
 \examples{
 x0 <-Sim_Trees1[1,]
@@ -27,6 +27,9 @@ n<-10
 
 Ultrametrics.HAR(x0, n, I = 50, h = 1)
 
+}
+\references{
+Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

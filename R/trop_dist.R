@@ -2,9 +2,9 @@
 #'
 #' This function computes the tropical distance between two points in the tropical projective torus
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @return Tropical distance between D1 and D2
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @return tropical distance between D1 and D2
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples

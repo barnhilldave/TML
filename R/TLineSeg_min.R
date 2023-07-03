@@ -1,10 +1,10 @@
 #' Construct a min-plus tropical line segment accor
 #'
-#' This function constructs a min-plus tropical line segment between two points.
+#' This function constructs a min-plus tropical line segment between two points
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @return A list of points defining the tropical line segment.
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @return list of points defining the tropical line segment
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

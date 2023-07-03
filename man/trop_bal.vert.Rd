@@ -7,12 +7,12 @@
 trop_bal.vert(x, d)
 }
 \arguments{
-\item{x}{Matrix where each row is a point defining a tropical polytope}
+\item{x}{matrix where each row is a point defining a tropical polytope}
 
 \item{d}{radius of the tropical ball in terms of tropical distance}
 }
 \value{
-square matrix of normalized tropical points defining the tropical ball. Rows are the points.
+square matrix of normalized tropical points defining the tropical ball. Rows are the points
 }
 \description{
 This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point.
@@ -21,6 +21,9 @@ This function calculates the coordinates of the minimum vertex set of a tropical
 x <-c(0,3,7)
 d <- 2
 trop_bal.vert(x,d)
+}
+\references{
+Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

@@ -1,13 +1,14 @@
 #' Hit-and-Run Sampler for the space of ultrametrics
 #'
-#' This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves.
+#' This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves
 #'
-#' @param x0 A phylogenetic tree
-#' @param n Number of leaves for the equidistant tree.
-#' @param I Number of states in the Markov chain.
-#' @param h Height of phylogenetic tree.
-#' @return Point in the space of ultrametrics over n leaves.
+#' @param x0 an equidistant tree defined as ultrametric
+#' @param n number of leaves for the equidistant tree
+#' @param I number of states in the Markov chain
+#' @param h height of phylogenetic tree
+#' @return point in the space of ultrametrics over n leaves
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#' @references Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 #' @export
 #' @examples
 #'x0 <-Sim_Trees1[1,]

@@ -1,10 +1,11 @@
-#' Calculate a minimum enclosing ball for a tropical polytope.
+#' Calculate a minimum enclosing ball for a tropical polytope
 #'
 #' This function constructs a minimum enclosing ball for a set of points defining a tropical polytope.
 #'
-#' @param A Matrix of points defining a tropical polytope. Rows are the points.
-#' @return List containing center point and radius of minimum enclosing ball of P.
+#' @param A matrix of points defining a tropical polytope. Rows are the points.
+#' @return list containing center point and radius of minimum enclosing ball of P
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 #' @export
 #' @examples
 #' P <-matrix(c(0,0,0,0,3,1,0,2,5),3,3,TRUE)

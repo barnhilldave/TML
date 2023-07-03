@@ -2,12 +2,12 @@
 % Please edit documentation in R/Tropical.HAR.w.extrapolation.R
 \name{TropicalPolytope.extrapolation.HAR}
 \alias{TropicalPolytope.extrapolation.HAR}
-\title{Vertex HAR with extrapolation MCMC with uniform target distribution.}
+\title{Vertex HAR with extrapolation MCMC with uniform target distribution}
 \usage{
 TropicalPolytope.extrapolation.HAR(D_s, x0, I = 1)
 }
 \arguments{
-\item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex.}
+\item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex}
 
 \item{x0}{initial point for sampler, numeric vector}
 
@@ -17,12 +17,15 @@ TropicalPolytope.extrapolation.HAR(D_s, x0, I = 1)
 next sampled point from the tropical polytope
 }
 \description{
-This function samples points uniformly the space defined by a tropical simplex.
+This function samples points uniformly the space defined by a tropical simplex
 }
 \examples{
 D_s <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
 x0 <- c(0,0,0)
 TropicalPolytope.extrapolation.HAR(D_s, x0, I = 50)
+}
+\references{
+Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

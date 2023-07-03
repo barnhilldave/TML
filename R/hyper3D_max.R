@@ -1,12 +1,12 @@
 #' 2D or 3D rendering of max-plus or min-plus tropical hyperplane
 #'
-#' This function renders a 2D or 3D max-plus or min-plus tropical hyperplane.
+#' This function renders a 2D or 3D max-plus or min-plus tropical hyperplane
 #'
-#' @param D Point in the tropical projective torus representing the apex of the hyperplane.
-#' @param di scalar; indicates how far the hyperplane should extend.
+#' @param D point in the tropical projective torus representing the apex of the hyperplane
+#' @param di scalar; indicates how far the hyperplane should extend
 #' @param mi scalar; minimum value on axes of the plot
 #' @param ma scalar; maximum value on axes of the plot
-#' @param plt Logical; if true produces a new plot otherwise overlays tropical hyperplane on existing plot.
+#' @param plt logical; if true produces a new plot otherwise overlays tropical hyperplane on existing plot
 #' @return 2D or 3D rendering of max-plus or min-plus tropical hyperplane
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @name hyper_3D

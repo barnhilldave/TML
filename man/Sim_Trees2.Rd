@@ -6,7 +6,7 @@
 \title{Phylogenetic trees data simulated from the Coalescant model}
 \format{
 ## `Sim_Trees2`
-A 1000 x 45 matrix where each row is an ultrametric representing a phylogenetic tree.
+A 1000 x 45 matrix where each row is an ultrametric representing a phylogenetic tree
 }
 \usage{
 Sim_Trees2

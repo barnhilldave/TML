@@ -2,15 +2,15 @@
 % Please edit documentation in R/rounding.R
 \name{rounding}
 \alias{rounding}
-\title{Remove all tentacles from a tropical simplex.}
+\title{Remove all tentacles from a tropical simplex}
 \usage{
 rounding(P)
 }
 \arguments{
-\item{P}{Matrix of points defining a tropical simplex. Rows are the points.}
+\item{P}{matrix of points defining a tropical simplex. Rows are the points}
 }
 \value{
-Matrix of points defining only the full-dimensional element (the trunk) of a tropical polytope. Rows are points.
+matrix of points defining only the full-dimensional element (the trunk) of a tropical polytope; rows are points
 }
 \description{
 This function removes all tentacles from a tropical simplex. The remaining portion is a full-dimensional tropical polytope known as the trunk of the tropical polytope.
@@ -20,6 +20,9 @@ P<-matrix(c(0,-1,1,0,0,0,0,1,-1),3,3,TRUE)
 BP<-min_enc_ball(P)
 RP<-rounding(P)
 BRP<-min_enc_ball(RP)
+}
+\references{
+Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

@@ -15,7 +15,7 @@ trop.dist.hyp_min(O, x0)
 tropical distance to min-plus tropical hyperplane
 }
 \description{
-Calculate the tropical distance to a min-tropical hyperplane.
+Calculate the tropical distance to a min-tropical hyperplane
 }
 \examples{
 O <-c(0,-1,-1)

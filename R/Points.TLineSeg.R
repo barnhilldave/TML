@@ -1,11 +1,11 @@
 #' Sample k equally spaced points on a max-plus tropical line segment
 #'
-#' This function calculates k equally spaced points on a tropical line segment.
+#' This function calculates k equally spaced points on a tropical line segment
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @param k Number of points
-#' @return A matrix of k equally spaced points on a tropical line segment.
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @param k number of points
+#' @return matrix of k equally spaced points on a tropical line segment
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples

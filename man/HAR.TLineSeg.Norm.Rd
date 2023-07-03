@@ -2,24 +2,24 @@
 % Please edit documentation in R/HAR.TLineSeg.Norm.R
 \name{HAR.TLineSeg.Norm}
 \alias{HAR.TLineSeg.Norm}
-\title{Gaussian-like Sampling on a max-plus tropical line segment.}
+\title{Gaussian-like Sampling on a max-plus tropical line segment}
 \usage{
 HAR.TLineSeg.Norm(D1, D2, mu, stdev)
 }
 \arguments{
-\item{D1}{Point in the tropical projective torus}
+\item{D1}{point in the tropical projective torus}
 
-\item{D2}{Point in the tropical projective torus}
+\item{D2}{point in the tropical projective torus}
 
-\item{mu}{Location parameter}
+\item{mu}{location parameter}
 
-\item{stdev}{Scale parameter}
+\item{stdev}{scale parameter}
 }
 \value{
-Point on the line segment defined by D1 and D2 sampled about mu
+point on the line segment defined by D1 and D2 sampled about mu
 }
 \description{
-This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance.
+This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance
 }
 \examples{
 D1 <-c(0,4,2)

@@ -7,13 +7,13 @@
 tdets(P)
 }
 \arguments{
-\item{P}{Matrix of points defining a tropical polytope. Rows are the points.}
+\item{P}{matrix of points defining a tropical polytope. Rows are the points}
 }
 \value{
-List containing the value of the determinant and reordered matrix P.
+list containing the value of the determinant and reordered matrix P
 }
 \description{
-This function calculates the tropical determinant (or singularity) of a square matrix.
+This function calculates the tropical determinant (or singularity) of a square matrix
 }
 \examples{
 P<-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)

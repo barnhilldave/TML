@@ -1,15 +1,16 @@
-#' Tropical Kernel Density Estimation of Phylogenetic Trees.
+#' Tropical Kernel Density Estimation of Phylogenetic Trees
 #'
 #' This function calculates a non-parametric density estimate of a tree over the space of phylogenetic trees on m leaves.
 #' It mimics classical kernel density estimation by using a Gaussian kernel in conjunction with tropical distance.
 #'
-#' @param D Matrix of phylogenetic tree observations.
-#' @param n Number of leaves for each tree.
-#' @param sigma Bandwidth parameter based on tropical distance.
-#' @param h Height of the tree
-#' @return List containing center point and radius of minimum enclosing ball of P.
+#' @param D matrix of phylogenetic tree observations
+#' @param n number of leaves for each tree
+#' @param sigma bandwidth parameter based on tropical distance
+#' @param h height of the tree
+#' @return list containing center point and radius of minimum enclosing ball of P
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @references Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+#' @references Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
 #' @name tropical.KDE
 #' @examples
 #' ### bw.nn function: from archived KDETree package

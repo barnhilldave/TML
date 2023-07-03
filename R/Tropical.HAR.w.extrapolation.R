@@ -1,12 +1,13 @@
-#' Vertex HAR with extrapolation MCMC with uniform target distribution.
+#' Vertex HAR with extrapolation MCMC with uniform target distribution
 #'
-#' This function samples points uniformly the space defined by a tropical simplex.
+#' This function samples points uniformly the space defined by a tropical simplex
 #'
-#' @param D_s matrix of vertices of a tropical simplex; each row is a vertex.
+#' @param D_s matrix of vertices of a tropical simplex; each row is a vertex
 #' @param x0 initial point for sampler, numeric vector
 #' @param I number of states in Markov chain
 #' @return next sampled point from the tropical polytope
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 #' @export
 #' @examples
 #' D_s <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)

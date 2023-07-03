@@ -2,15 +2,15 @@
 % Please edit documentation in R/min_enc_ball.R
 \name{min_enc_ball}
 \alias{min_enc_ball}
-\title{Calculate a minimum enclosing ball for a tropical polytope.}
+\title{Calculate a minimum enclosing ball for a tropical polytope}
 \usage{
 min_enc_ball(A)
 }
 \arguments{
-\item{A}{Matrix of points defining a tropical polytope. Rows are the points.}
+\item{A}{matrix of points defining a tropical polytope. Rows are the points.}
 }
 \value{
-List containing center point and radius of minimum enclosing ball of P.
+list containing center point and radius of minimum enclosing ball of P
 }
 \description{
 This function constructs a minimum enclosing ball for a set of points defining a tropical polytope.
@@ -18,6 +18,9 @@ This function constructs a minimum enclosing ball for a set of points defining a
 \examples{
 P <-matrix(c(0,0,0,0,3,1,0,2,5),3,3,TRUE)
 min_enc_ball(P)
+}
+\references{
+Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

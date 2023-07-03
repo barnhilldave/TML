@@ -8,7 +8,7 @@
 TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 1, M, S)
 }
 \arguments{
-\item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex.}
+\item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex}
 
 \item{x0}{initial point for sampler, numeric vector}
 
@@ -22,7 +22,7 @@ TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 1, M, S)
 next sampled point from the tropical polytope
 }
 \description{
-This function is a Gaussian-like HAR sampler about a center of mass denoted by a location parameter with scale parameter in terms of the tropical distance.
+This function is a Gaussian-like HAR sampler about a center of mass denoted by a location parameter with scale parameter in terms of the tropical distance
 }
 \examples{
 D_s <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)

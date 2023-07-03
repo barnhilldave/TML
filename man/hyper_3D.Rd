@@ -11,21 +11,21 @@ hyper3d_max(D, di, mi, ma, plt = FALSE)
 hyper3d_min(D, di, mi, ma, plt = FALSE)
 }
 \arguments{
-\item{D}{Point in the tropical projective torus representing the apex of the hyperplane.}
+\item{D}{point in the tropical projective torus representing the apex of the hyperplane}
 
-\item{di}{scalar; indicates how far the hyperplane should extend.}
+\item{di}{scalar; indicates how far the hyperplane should extend}
 
 \item{mi}{scalar; minimum value on axes of the plot}
 
 \item{ma}{scalar; maximum value on axes of the plot}
 
-\item{plt}{Logical; if true produces a new plot otherwise overlays tropical hyperplane on existing plot.}
+\item{plt}{logical; if true produces a new plot otherwise overlays tropical hyperplane on existing plot}
 }
 \value{
 2D or 3D rendering of max-plus or min-plus tropical hyperplane
 }
 \description{
-This function renders a 2D or 3D max-plus or min-plus tropical hyperplane.
+This function renders a 2D or 3D max-plus or min-plus tropical hyperplane
 }
 \examples{
 # 2D Example

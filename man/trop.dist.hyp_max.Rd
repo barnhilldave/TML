@@ -15,7 +15,7 @@ trop.dist.hyp_max(O, x0)
 tropical distance to max-plus tropical hyperplane
 }
 \description{
-Calculate the tropical distance to a max-tropical hyperplane.
+Calculate the tropical distance to a max-tropical hyperplane
 }
 \examples{
 O <-c(0,-1,-1)

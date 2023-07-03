@@ -1,6 +1,6 @@
 #' Calculate the tropical distance to a max-tropical hyperplane
 #'
-#' Calculate the tropical distance to a max-tropical hyperplane.
+#' Calculate the tropical distance to a max-tropical hyperplane
 #'
 #' @param O normal vector of a tropical hyperplane; numeric vector
 #' @param x0 point of interest; numeric vector

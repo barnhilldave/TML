@@ -2,21 +2,21 @@
 % Please edit documentation in R/tropical.KDE.R
 \name{tropical.KDE}
 \alias{tropical.KDE}
-\title{Tropical Kernel Density Estimation of Phylogenetic Trees.}
+\title{Tropical Kernel Density Estimation of Phylogenetic Trees}
 \usage{
 tropical.KDE(D, n, sigma, h = 2)
 }
 \arguments{
-\item{D}{Matrix of phylogenetic tree observations.}
+\item{D}{matrix of phylogenetic tree observations}
 
-\item{n}{Number of leaves for each tree.}
+\item{n}{number of leaves for each tree}
 
-\item{sigma}{Bandwidth parameter based on tropical distance.}
+\item{sigma}{bandwidth parameter based on tropical distance}
 
-\item{h}{Height of the tree}
+\item{h}{height of the tree}
 }
 \value{
-List containing center point and radius of minimum enclosing ball of P.
+list containing center point and radius of minimum enclosing ball of P
 }
 \description{
 This function calculates a non-parametric density estimate of a tree over the space of phylogenetic trees on m leaves.
@@ -54,6 +54,8 @@ Q025 <- P_5[T]
 }
 \references{
 Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+
+Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

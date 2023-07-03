@@ -7,17 +7,17 @@
 Points.TLineSeg(D1, D2, k = 20)
 }
 \arguments{
-\item{D1}{Point in the tropical projective torus}
+\item{D1}{point in the tropical projective torus}
 
-\item{D2}{Point in the tropical projective torus}
+\item{D2}{point in the tropical projective torus}
 
-\item{k}{Number of points}
+\item{k}{number of points}
 }
 \value{
-A matrix of k equally spaced points on a tropical line segment.
+matrix of k equally spaced points on a tropical line segment
 }
 \description{
-This function calculates k equally spaced points on a tropical line segment.
+This function calculates k equally spaced points on a tropical line segment
 }
 \examples{
 D1 <-c(0,4,2)

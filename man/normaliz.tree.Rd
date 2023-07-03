@@ -7,15 +7,15 @@
 normaliz.tree(D, h = 1)
 }
 \arguments{
-\item{D}{Phylogenetic tree}
+\item{D}{numeric vector; ultrametric equidistant tree}
 
-\item{h}{Desired height.  Defaults to 1.}
+\item{h}{desired height; defaults to 1}
 }
 \value{
-Normalized equidistant tree
+normalized equidistant tree
 }
 \description{
-This function normalizes the height of a phylogenetic tree.
+This function normalizes the height of a phylogenetic tree
 }
 \examples{
 D <-c(4,4,2)

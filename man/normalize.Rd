@@ -5,6 +5,7 @@
 \alias{normaliz.vector}
 \alias{normaliz.vectors}
 \alias{normaliz.polytope}
+\alias{normaliz.ultrametrics}
 \title{Normalize a point or set of points in the tropical projective torus}
 \usage{
 normaliz.vector(D)
@@ -12,15 +13,17 @@ normaliz.vector(D)
 normaliz.vectors(D)
 
 normaliz.polytope(D)
+
+normaliz.ultrametrics(D)
 }
 \arguments{
-\item{D}{Vector in the tropical projective torus or a matrix of points in the tropical projective torus.  For matrices, rows are the points.}
+\item{D}{numeric vector in the tropical projective torus or a matrix of points in the tropical projective torus; for matrices, rows are the points}
 }
 \value{
-A single or set of normalized points with the first coordinate zero.
+a single or set of normalized points with the first coordinate zero
 }
 \description{
-This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero.
+This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero
 }
 \examples{
 D <-c(8,4,2)
@@ -31,6 +34,9 @@ normaliz.vectors(P)
 
 M<-matrix(c(2,2,2,3,6,4,2,4,7),3,3,TRUE)
 normaliz.polytope(M)
+
+M <- Sim_Trees1[1:3,]
+normaliz.ultrametrics(M)
 
 }
 \author{

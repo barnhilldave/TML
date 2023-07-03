@@ -7,19 +7,22 @@
 Trop_FW(A)
 }
 \arguments{
-\item{A}{Matrix of points defining a tropical polytope.  Rows are the tropical points.}
+\item{A}{matrix of points defining a tropical polytope; rows are the tropical points}
 }
 \value{
-Numeric vector providing the tropical Fermat-Weber point for the tropical polytope.
+numeric vector providing the tropical Fermat-Weber point for the tropical polytope
 }
 \description{
-This function calculates the Fermat-Weber point for a tropical polytope.
+This function calculates the Fermat-Weber point for a tropical polytope
 }
 \examples{
 P <-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 
 Trop_FW(P)
 
+}
+\references{
+Lin, Bo and Ruriko Yoshida (2016). Tropical Fermat-Weber Points. SIAM J. Discret. Math. 32: 1229-1245.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

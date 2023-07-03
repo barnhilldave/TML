@@ -1,11 +1,12 @@
 #' Uniformly sample from a max-plus tropical line segment
 #'
-#' This function uses a hit-and-run sampler to uniformly sample from a max-plus tropical line segment.
+#' This function uses a hit-and-run sampler to uniformly sample from a max-plus tropical line segment
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @return A point on the line segment defined by D1 and D2
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @return point on the line segment defined by D1 and D2
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#' @references Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 #' @export
 #' @examples
 #'D1 <-c(0,4,2)

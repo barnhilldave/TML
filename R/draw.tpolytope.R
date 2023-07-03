@@ -1,9 +1,9 @@
 #' Draw a 3-D tropical polytope
 #'
-#' This command draws a three dimensional tropical polytope.
+#' This command draws a three dimensional tropical polytope
 #'
-#' @param D Matrix of vertices of a tropical polytope.  Rows are the vertices.
-#' @param c Color to render the polytope.
+#' @param D matrix of vertices of a tropical polytope; rows are the vertices
+#' @param c string; color to render the polytope.
 #' @return 3-D rendering of a tropical polytope.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name draw.tpolytope

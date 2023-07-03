@@ -6,7 +6,7 @@
 \title{Simulated points over the tropical projective torus}
 \format{
 ## `Sim_points`
-A 150 x 3 matrix where each row is an ultrametric representing a phylogenetic tree.
+A 150 x 3 matrix where each row is a point in the tropical projective torus
 }
 \usage{
 Sim_points

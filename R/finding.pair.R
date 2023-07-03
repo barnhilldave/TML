@@ -1,10 +1,10 @@
 #' Find the best pair of clusters
 #'
-#' Find the best pair of clusters to merge based on tropical linkage method.
+#' Find the best pair of clusters to merge based on tropical linkage method
 #'
-#' @param D1 List of Matrices
-#' @param method Linkage method.
-#' @return Value of the associated linkage method
+#' @param D1 list of Matrices
+#' @param method linkage method.
+#' @return value of the associated linkage method
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @noRd
 

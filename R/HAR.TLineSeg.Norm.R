@@ -1,12 +1,12 @@
-#' Gaussian-like Sampling on a max-plus tropical line segment.
+#' Gaussian-like Sampling on a max-plus tropical line segment
 #'
-#' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance.
+#' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @param mu Location parameter
-#' @param stdev Scale parameter
-#' @return Point on the line segment defined by D1 and D2 sampled about mu
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @param mu location parameter
+#' @param stdev scale parameter
+#' @return point on the line segment defined by D1 and D2 sampled about mu
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

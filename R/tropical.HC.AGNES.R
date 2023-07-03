@@ -1,11 +1,12 @@
 #' Agglomerative (AGNES) tropical hierarchical clustering
 #'
-#' This function performs agglomerative (AGNES) hierarchical clustering over the space of ultrametrics defining the space of equidistant trees.
+#' This function performs agglomerative (AGNES) hierarchical clustering over the space of ultrametrics defining the space of equidistant trees
 #'
-#' @param D Matrix of points defining a tropical polytope.  Rows are the tropical points.
-#' @param method Linkage method: "average", "min", or "max".
-#' @return List of distances in when merges occur; list of indices of points in each cluster.
+#' @param D matrix of points defining a tropical polytope.  Rows are the tropical points
+#' @param method linkage method: "average", "min", or "max"
+#' @return list of distances in when merges occur; list of indices of points in each cluster
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
 #' @export
 #' @examples
 #' P <-Sim_points

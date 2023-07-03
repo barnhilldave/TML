@@ -8,15 +8,15 @@
 draw.tpolytope.3d(D, c)
 }
 \arguments{
-\item{D}{Matrix of vertices of a tropical polytope.  Rows are the vertices.}
+\item{D}{matrix of vertices of a tropical polytope; rows are the vertices}
 
-\item{c}{Color to render the polytope.}
+\item{c}{string; color to render the polytope.}
 }
 \value{
 3-D rendering of a tropical polytope.
 }
 \description{
-This command draws a three dimensional tropical polytope.
+This command draws a three dimensional tropical polytope
 }
 \examples{
 D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)

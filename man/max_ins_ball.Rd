@@ -2,22 +2,25 @@
 % Please edit documentation in R/max_ins_ball.R
 \name{max_ins_ball}
 \alias{max_ins_ball}
-\title{Calculate the center point and radius of the maximum inscribed ball for a tropical simplex.}
+\title{Calculate the center point and radius of the maximum inscribed ball for a tropical simplex}
 \usage{
 max_ins_ball(A)
 }
 \arguments{
-\item{A}{Matrix of points defining a tropical polytope. Rows are the points.}
+\item{A}{matrix of points defining a tropical polytope; rows are the points}
 }
 \value{
-List containing the radius and center point of a maximum inscribed ball.
+list containing the radius and center point of a maximum inscribed ball
 }
 \description{
-This function calculates the center point and radius of the maximum inscribed ball for a tropical simplex.
+This function calculates the center point and radius of the maximum inscribed ball for a tropical simplex
 }
 \examples{
 P<-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 max_ins_ball(P)
+}
+\references{
+Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

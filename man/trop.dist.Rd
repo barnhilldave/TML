@@ -7,12 +7,12 @@
 trop.dist(D1, D2)
 }
 \arguments{
-\item{D1}{Point in the tropical projective torus}
+\item{D1}{point in the tropical projective torus}
 
-\item{D2}{Point in the tropical projective torus}
+\item{D2}{point in the tropical projective torus}
 }
 \value{
-Tropical distance between D1 and D2
+tropical distance between D1 and D2
 }
 \description{
 This function computes the tropical distance between two points in the tropical projective torus

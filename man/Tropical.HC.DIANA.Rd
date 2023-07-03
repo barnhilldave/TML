@@ -7,18 +7,18 @@
 Tropical.HC.DIANA(D, D1, D2, n, k = 2)
 }
 \arguments{
-\item{D}{Matrix of ultrametrics.  Rows are the tropical points.}
+\item{D}{matrix of ultrametrics; rows are the tropical points}
 
-\item{D1}{Subset of D}
+\item{D1}{subset of D}
 
-\item{D2}{Subset of D}
+\item{D2}{subset of D}
 
-\item{n}{Number of leaves.}
+\item{n}{number of leaves}
 
-\item{k}{Number of clusters to partition data.}
+\item{k}{number of clusters to partition data}
 }
 \value{
-Value
+value
 }
 \description{
 This function performs divisive (DIANA) hierarchical clustering over the space of ultrametrics defining the space of equidistant trees.
@@ -32,6 +32,9 @@ T2<-Sim_Trees2[index.2,]
 T<-rbind(T1,T2)
 n=10
 Tropical.HC.DIANA(T,T1,T2, n,k=2)
+}
+\references{
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

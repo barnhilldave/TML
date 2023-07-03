@@ -1,10 +1,11 @@
-#' Calculate the center point and radius of the maximum inscribed ball for a tropical simplex.
+#' Calculate the center point and radius of the maximum inscribed ball for a tropical simplex
 #'
-#' This function calculates the center point and radius of the maximum inscribed ball for a tropical simplex.
+#' This function calculates the center point and radius of the maximum inscribed ball for a tropical simplex
 #'
-#' @param A Matrix of points defining a tropical polytope. Rows are the points.
-#' @return List containing the radius and center point of a maximum inscribed ball.
+#' @param A matrix of points defining a tropical polytope; rows are the points
+#' @return list containing the radius and center point of a maximum inscribed ball
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
 #' @export
 #' @examples
 #' P<-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)

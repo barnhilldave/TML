@@ -36,7 +36,7 @@ Trop_ball(
 2D or 3D visualization of tropical ball
 }
 \description{
-This function constructs a visualization of a 2D or 3D tropical ball.
+This function constructs a visualization of a 2D or 3D tropical ball
 }
 \examples{
 v <-c(0,0,0)

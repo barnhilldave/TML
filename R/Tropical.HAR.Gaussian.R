@@ -1,8 +1,8 @@
 #' Tropical Gaussian sampling about a center of mass
 #'
-#' This function is a Gaussian-like HAR sampler about a center of mass denoted by a location parameter with scale parameter in terms of the tropical distance.
+#' This function is a Gaussian-like HAR sampler about a center of mass denoted by a location parameter with scale parameter in terms of the tropical distance
 #'
-#' @param D_s matrix of vertices of a tropical simplex; each row is a vertex.
+#' @param D_s matrix of vertices of a tropical simplex; each row is a vertex
 #' @param x0 initial point for sampler, numeric vector
 #' @param I number of states in Markov chain
 #' @param M location parameter; numeric vector indicating centroid

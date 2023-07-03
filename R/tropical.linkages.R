@@ -3,9 +3,10 @@
 #' These functions represent three possible linkage measures, average, maximum, and minimum, measured in terms of the tropical distance.
 #' These are tropical analogues to linkages in Euclidean hierarchical clustering.
 #'
-#' @param D1 Matrix of points defining a tropical polytope.  Rows are the tropical points.
-#' @param D2 Matrix of points assigned to a cluster.
-#' @return Value of the associated linkage method
+#' @param D1 matrix of points defining a tropical polytope; rows are the tropical points
+#' @param D2 matrix of points assigned to a cluster
+#' @return value of the associated linkage method
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @noRd
 

@@ -2,20 +2,20 @@
 % Please edit documentation in R/TLineSeg.R
 \name{TLineSeg}
 \alias{TLineSeg}
-\title{Construct a max-plus tropical line segment accor}
+\title{Construct a max-plus tropical line segment between two points}
 \usage{
 TLineSeg(D1, D2)
 }
 \arguments{
-\item{D1}{Point in the tropical projective torus}
+\item{D1}{point in the tropical projective torus}
 
-\item{D2}{Point in the tropical projective torus}
+\item{D2}{point in the tropical projective torus}
 }
 \value{
-A list of points defining the tropical line segment.
+list of points defining the tropical line segment
 }
 \description{
-This function constructs a max-plus tropical line segment between two points.
+This function constructs a max-plus tropical line segment between two points
 }
 \examples{
 D1 <-c(0,4,2)

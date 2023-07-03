@@ -2,13 +2,14 @@
 #'
 #' This function performs divisive (DIANA) hierarchical clustering over the space of ultrametrics defining the space of equidistant trees.
 #'
-#' @param D Matrix of ultrametrics.  Rows are the tropical points.
-#' @param D1 Subset of D
-#' @param D2 Subset of D
-#' @param n Number of leaves.
-#' @param k Number of clusters to partition data.
-#' @return Value
+#' @param D matrix of ultrametrics; rows are the tropical points
+#' @param D1 subset of D
+#' @param D2 subset of D
+#' @param n number of leaves
+#' @param k number of clusters to partition data
+#' @return value
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
 #' @export
 #' @examples
 #' set.seed(123)

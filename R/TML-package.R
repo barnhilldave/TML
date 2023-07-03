@@ -12,7 +12,8 @@
 #' @importFrom miscTools symMatrix
 #' @importFrom cluster diana
 #' @importFrom grDevices rainbow
-#' @importFrom graphics lines
+#' @importFrom graphics lines segments
+#' @importFrom grDevices pdf
 #' @rawNamespace import(ape, except = yule)
 #' @name TML
 #' @aliases TML package-TML

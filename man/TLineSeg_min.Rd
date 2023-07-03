@@ -7,15 +7,15 @@
 TLineSeg_min(D1, D2)
 }
 \arguments{
-\item{D1}{Point in the tropical projective torus}
+\item{D1}{point in the tropical projective torus}
 
-\item{D2}{Point in the tropical projective torus}
+\item{D2}{point in the tropical projective torus}
 }
 \value{
-A list of points defining the tropical line segment.
+list of points defining the tropical line segment
 }
 \description{
-This function constructs a min-plus tropical line segment between two points.
+This function constructs a min-plus tropical line segment between two points
 }
 \examples{
 D1 <-c(0,4,2)

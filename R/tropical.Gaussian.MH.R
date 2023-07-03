@@ -1,6 +1,6 @@
 #' Gaussian-like sampling using Metropolis filter
 #'
-#' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance.
+#' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance
 #'
 #' @param D matrix of vertices of a tropical polytope; each row is a vertex
 #' @param x0 initial point for sampler, numeric vector
@@ -8,8 +8,9 @@
 #' @param s scale parameter; scalar
 #' @param n number of points to sample
 #' @param I states in Markov chain
-#' @return matrix of n sampled points where each point is a row.
+#' @return matrix of n sampled points where each point is a row
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
+#' @references Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 #' @name tropical.Gaussian.MH
 #' @examples
 #' D <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)

@@ -1,6 +1,6 @@
 #' Visualize a Tropical ball in 2D or 3D
 #'
-#' This function constructs a visualization of a 2D or 3D tropical ball.
+#' This function constructs a visualization of a 2D or 3D tropical ball
 #'
 #' @param v center of tropical ball; numeric vector of length 3 or 4
 #' @param d radius of tropical ball

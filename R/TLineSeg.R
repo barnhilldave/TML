@@ -1,10 +1,10 @@
-#' Construct a max-plus tropical line segment accor
+#' Construct a max-plus tropical line segment between two points
 #'
-#' This function constructs a max-plus tropical line segment between two points.
+#' This function constructs a max-plus tropical line segment between two points
 #'
-#' @param D1 Point in the tropical projective torus
-#' @param D2 Point in the tropical projective torus
-#' @return A list of points defining the tropical line segment.
+#' @param D1 point in the tropical projective torus
+#' @param D2 point in the tropical projective torus
+#' @return list of points defining the tropical line segment
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples

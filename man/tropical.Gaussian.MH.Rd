@@ -24,10 +24,10 @@ trop.Gaussian.MH.square(D, x0, mu, s, n, I = 50)
 \item{I}{states in Markov chain}
 }
 \value{
-matrix of n sampled points where each point is a row.
+matrix of n sampled points where each point is a row
 }
 \description{
-This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance.
+This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance
 }
 \examples{
 D <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
@@ -37,6 +37,9 @@ s<-1
 n<-500
 trop.Gaussian.MH(D, x0, mu, s, n, I=50)
 trop.Gaussian.MH.square(D, x0,mu, s, n, I=50)
+}
+\references{
+Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

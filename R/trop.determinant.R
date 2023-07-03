@@ -1,9 +1,9 @@
 #' Calculate the tropical determinant of a square matrix.
 #'
-#' This function calculates the tropical determinant (or singularity) of a square matrix.
+#' This function calculates the tropical determinant (or singularity) of a square matrix
 #'
-#' @param P Matrix of points defining a tropical polytope. Rows are the points.
-#' @return List containing the value of the determinant and reordered matrix P.
+#' @param P matrix of points defining a tropical polytope. Rows are the points
+#' @return list containing the value of the determinant and reordered matrix P
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples
