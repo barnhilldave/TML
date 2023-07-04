@@ -17,7 +17,7 @@
 #' BR<-min_enc_ball(P)
 #' B<-trop_bal.vert(BR[[1]],BR[[2]])
 #' x0<-c(0,1.5,.4)
-#' S<-500
+#' S<-200
 #' I<-50
 #' R<-BR[[2]]
 #' Trop_Volume(B,P,x0,S,I,R)

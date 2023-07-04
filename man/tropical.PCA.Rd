@@ -26,6 +26,7 @@ This function conducts tropical PCA to find the best fit tropical triangle given
 It employs the vertex HAR with extrapolation sampler to sample points to determine the vertices of the tropical triangle.
 }
 \examples{
+\dontrun{
 s <- 3 #number of vertices.  Here it is a tropical triangle
 d <- 3 ## dimension
 N <- 100 ## sample size
@@ -43,6 +44,7 @@ for(i in 1:N)
 res <- tropical.PCA.Polytope(S, D, V, I = 1000,50)
 DD <- pre.pplot.pro(res[[2]], res[[3]])
 trop.tri.plot.w.pts(normaliz.ultrametrics(res[[2]]), DD)
+}
 }
 \references{
 Page, Robert and others (2020), Tropical principal component analysis on the space of phylogenetic trees, Bioinformatics, Volume 36, Issue 17, Pages 4590–4598.

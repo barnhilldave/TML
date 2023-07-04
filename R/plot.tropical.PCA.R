@@ -8,6 +8,7 @@
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples
+#' \dontrun{
 #' s <- 3 #number of vertices.  Here it is a tropical triangle
 #' d <- 3 ## dimension
 #' N <- 100 ## sample size
@@ -20,9 +21,8 @@
 #' S <- D[index,]
 #' res <- tropical.PCA.Polytope(S, D, V, I = 1000,50)
 #' DD <- pre.pplot.pro(res[[2]], res[[3]])
-#' trop.tri.plot.w.pts(normaliz.ultrametrics(res[[2]]), DD)
-#'
-#'
+#' trop.tri.plot.w.pts(normaliz.ultrametrics(res[[2]]), DD)}
+
 
 trop.tri.plot.w.pts <- function(S, D){
   k <- ncol(S)

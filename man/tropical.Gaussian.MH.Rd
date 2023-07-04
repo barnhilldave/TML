@@ -34,7 +34,7 @@ D <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
 x0 <- c(0,0,0)
 mu<-c(0,5,5)
 s<-1
-n<-500
+n<-10
 trop.Gaussian.MH(D, x0, mu, s, n, I=50)
 trop.Gaussian.MH.square(D, x0,mu, s, n, I=50)
 }
