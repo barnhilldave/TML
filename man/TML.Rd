@@ -8,6 +8,3 @@
 \description{
 TML provides a suite of tools for machine learning application on data over the tropical semiring
 }
-\references{
-D. Barnhill, R. Yoshida, and K. Miura (2023). "Tropical Machine Learning in R: the TML Package."
-}

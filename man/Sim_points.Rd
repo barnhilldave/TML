@@ -5,8 +5,10 @@
 \alias{Sim_points}
 \title{Simulated points over the tropical projective torus}
 \format{
-## `Sim_points`
+\subsection{\code{Sim_points}}{
+
 A 150 x 3 matrix where each row is a point in the tropical projective torus
+}
 }
 \usage{
 Sim_points

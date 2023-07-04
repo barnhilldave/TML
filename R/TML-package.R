@@ -17,5 +17,4 @@
 #' @rawNamespace import(ape, except = yule)
 #' @name TML
 #' @aliases TML package-TML
-#' @references D. Barnhill, R. Yoshida, and K. Miura (2023). "Tropical Machine Learning in R: the TML Package."
 NULL

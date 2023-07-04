@@ -5,8 +5,10 @@
 \alias{Sim_Trees1}
 \title{Phylogenetic trees data simulated from the Coalescant model}
 \format{
-## `Sim_Trees1`
+\subsection{\code{Sim_Trees1}}{
+
 A 1000 x 45 matrix where each row is an ultrametric representing a phylogenetic tree
+}
 }
 \usage{
 Sim_Trees1
