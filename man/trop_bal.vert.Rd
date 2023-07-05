@@ -2,7 +2,7 @@
 % Please edit documentation in R/tropical.ball.verts.R
 \name{trop_bal.vert}
 \alias{trop_bal.vert}
-\title{Calculate the minimum generating vertex set of a tropical ball.}
+\title{Calculate the minimum generating vertex set of a tropical ball}
 \usage{
 trop_bal.vert(x, d)
 }
@@ -15,7 +15,7 @@ trop_bal.vert(x, d)
 square matrix of normalized tropical points defining the tropical ball. Rows are the points
 }
 \description{
-This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point.
+This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point
 }
 \examples{
 x <-c(0,3,7)

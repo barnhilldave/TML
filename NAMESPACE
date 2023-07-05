@@ -3,6 +3,7 @@
 export(HAR.TLineSeg)
 export(HAR.TLineSeg.Norm)
 export(Points.TLineSeg)
+export(T.SVM)
 export(TKmeans)
 export(TLineSeg)
 export(TLineSeg_min)

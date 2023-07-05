@@ -1,6 +1,6 @@
-#' Calculate the minimum generating vertex set of a tropical ball.
+#' Calculate the minimum generating vertex set of a tropical ball
 #'
-#' This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point.
+#' This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point
 #'
 #' @param x matrix where each row is a point defining a tropical polytope
 #' @param d radius of the tropical ball in terms of tropical distance
