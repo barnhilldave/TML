@@ -9,8 +9,9 @@
 #' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
 #' @export
 #' @examples
-#' P <-Sim_points
+#' \dontrun{P <-Sim_points
 #' Tropical.HC.AGNES(P, method="average")
+#' }
 
 Tropical.HC.AGNES <- function(D, method="average"){
   ### method is one of "average", "min", "max"

@@ -23,6 +23,7 @@ This function calculates a non-parametric density estimate of a tree over the sp
 It mimics classical kernel density estimation by using a Gaussian kernel in conjunction with tropical distance.
 }
 \examples{
+\dontrun{
 ### bw.nn function: from archived KDETree package
 bw.nn <- function(x,prop=0.2,tol=1e-6){
  out <- apply(x, 1, quantile, prop)
@@ -51,6 +52,7 @@ M <- pw.trop.dist(D, D)
 sigma <- bw.nn(M)
 P_5 <- tropical.KDE(D, n, sigma, h = 2)
 Q025 <- P_5[T]
+}
 }
 \references{
 Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.

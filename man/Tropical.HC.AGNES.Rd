@@ -18,8 +18,9 @@ list of distances in when merges occur; list of indices of points in each cluste
 This function performs agglomerative (AGNES) hierarchical clustering over the space of ultrametrics defining the space of equidistant trees
 }
 \examples{
-P <-Sim_points
+\dontrun{P <-Sim_points
 Tropical.HC.AGNES(P, method="average")
+}
 }
 \references{
 David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.

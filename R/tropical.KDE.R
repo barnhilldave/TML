@@ -13,6 +13,7 @@
 #' @references Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
 #' @name tropical.KDE
 #' @examples
+#' \dontrun{
 #' ### bw.nn function: from archived KDETree package
 #'bw.nn <- function(x,prop=0.2,tol=1e-6){
 #'  out <- apply(x, 1, quantile, prop)
@@ -45,6 +46,7 @@
 #' P_5 <- tropical.KDE(D, n, sigma, h = 2)
 
 #' Q025 <- P_5[T]
+#' }
 
 #'@export
 #'@rdname tropical.KDE
