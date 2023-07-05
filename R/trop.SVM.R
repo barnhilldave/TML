@@ -20,10 +20,10 @@
 #' wine1<-as.matrix(wine)
 #' wines<-wine1[,2:ncol(wine1)]
 #' w_type<-wine1[,1]
-#' T.SVM(wines,w_type,L=1000,tr=.8,st=100,trop=1)
+#' trop.SVM(wines,w_type,L=1000,tr=.8,st=100,trop=1)
 #'}
 
-T.SVM<-function(V,clses,L=1000,tr=.8,st=100,trop=1){
+trop.SVM<-function(V,clses,L=1000,tr=.8,st=100,trop=1){
   specs<-as.vector(unique(clses))
   dt<-sample(nrow(V),tr*nrow(V))
   if(trop==1){
