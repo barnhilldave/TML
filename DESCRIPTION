@@ -5,6 +5,7 @@ Version: 0.1.0
 Authors@R: c(person('David', 'Barnhill', email='david.barnhill@nps.edu',role = c('aut','cre'),, comment = c(ORCID = "0009-0006-2781-7434")),person('Ruriko', 'Yoshida', role = c('aut')),person('Keiji','Miura',role=c('aut')))
 Description: Machine learning tools applied to tropical geometry in R.
 License: MIT + file LICENSE
+Mainter: David Barnhill <david.barnhill@nps.edu>
 URL: https://github.com/barnhilldave/TML
 BugReports: https://github.com/barnhilldave/TML/issues
 Depends:
