@@ -3,7 +3,7 @@ Type: Package
 Title: Tropical Geometry Tools for Machine Learning in R
 Version: 0.1.0
 Authors@R: c(person('David', 'Barnhill', email='david.barnhill@nps.edu',role = c('aut','cre'),, comment = c(ORCID = "0009-0006-2781-7434")),person('Ruriko', 'Yoshida', role = c('aut')),person('Keiji','Miura',role=c('aut')))
-Description: Supplies a suite of tools from tropical geometry for use in machine learning applications in R. These methods may be summarized in the following references: Yoshida, et al. <arxiv.org/abs/2209.15045>, Barnhill et al. <arxiv.org/abs/2303.02539>, Barnhill and Yoshida <doi.org/10.21203/rs.3.rs-3047827/v19>, Yoshida et al. <doi.org/10.1007/s11538-018-0493-4>, and Yoshida et al. <	arXiv:2206.04206>.
+Description: Suite of tropical geometric tools for use in machine learning applications in R. These methods may be summarized in the following references: Yoshida, et al. <arxiv:2209.15045>, Barnhill et al. <arxiv:2303.02539>, Barnhill and Yoshida <doi:10.21203/rs.3.rs-3047827>, Yoshida et al. <doi:10.1007/s11538-018-0493-4>, and Yoshida et al. <arXiv:2206.04206>.
 License: MIT + file LICENSE
 Maintainer: David Barnhill <david.barnhill@nps.edu>
 URL: https://github.com/barnhilldave/TML
