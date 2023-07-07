@@ -25,10 +25,8 @@ Tropical.HC.AGNES <- function(D, method="average"){
   for(i in 2:d[1]){
     D1 <- make.list.matrices(D, index)
     best.pair <- finding.pair(D1, method)
-    #print(best.pair[[1]])
     index[[best.pair[[1]][1]]] <- cbind(index[[best.pair[[1]][1]]], index[[best.pair[[1]][2]]])
     index <- index[-best.pair[[1]][2]]
-    #print(index[best.pair[[1]][2]])
     index.list[[i]] <- index
     distance[i] <- best.pair[[2]]
   }

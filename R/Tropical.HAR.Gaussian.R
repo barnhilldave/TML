@@ -115,7 +115,6 @@ HAR.TLineSeg.Norm_Poly.V2<-function(D1,D2,mu,stdev){
   pts<-rbind(D1,D2,pro_mu)
   l0<-trop.dist(D2,pro_mu)+min(D2-D1)
   l <- rnorm(1, mean = 0, sd=stdev)
-  #print(l)
   x_p <- rep(0, d)
   for(i in 1:d){
     x_p[i] <-max(((l+ l0) + D1[i]), D2[i])

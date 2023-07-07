@@ -21,7 +21,6 @@ This function projects points in the tropical projective torus onto a tropical p
 D_s <-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 D <- c(0,7,-1)
 project_pi(D_s,D)
-
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}
