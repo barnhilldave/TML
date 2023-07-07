@@ -11,7 +11,6 @@
 #' @export
 #' @examples
 #' P <-Sim_points
-#' TFW<-Trop_FW(P)
 #' C<-3
 #' M<-10
 #' res<-TKmeans(P,C,M)
@@ -46,7 +45,6 @@ TKmeans<-function(A,C,M){
       try=try1
       ct<-ct+1
     }
-    print(ct)
   }
   RES<-list(try,or_cents,ct)
   return(RES)

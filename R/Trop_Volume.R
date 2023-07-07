@@ -25,17 +25,12 @@
 Trop_Volume<-function(B,P,x0,S,I,R){
   count<-0
   d<-ncol(P)
-  #har_points<-matrix(0,S,d,TRUE)
-  #har_points1<-matrix(0,0,d)
   for (i in (1:S)){
-    print(i)
     x<-TropicalPolytope.extrapolation.HAR(B, x0, I)
     proj<-project_pi(P,x)
     if(trop.dist(x,proj)<=1e-8){
       count<-count+1
-      #har_points1<-rbind(har_points1,x)
     }
-    #har_points[i,]<-x
     x0<-x
   }
   r<-count/S

@@ -14,7 +14,7 @@ tdets<-function(P){
   dd<-dim(P)
   B<-P
   if(dd[[1]]!=dd[[2]]){
-    return(print("Not a Square Matrix!"))
+    warning("Not a Square Matrix!")
   }
   else{
     tds<-c(0,0)
@@ -39,7 +39,7 @@ tdets<-function(P){
       i=i+1
     }
     if(tds[1]==tds[2]){
-      return(print('Singular'))
+      warning('Singular')
     }
     else{
       for (i in 1:length(max_ind)){

@@ -30,7 +30,6 @@ trop.Gaussian.MH <- function(D, x0, mu, s, n, I=50){
   k <- ncol(D)-1
   i <- 1
   while(i <= n){
-    print(i)
     x1 <- TropicalPolytope.extrapolation.HAR(D, x0, I = I)
     x1 <- normaliz.vector(x1)
     r<-exp(-trop.dist(mu, x1)/s)/exp(-trop.dist(mu, x0)/s)
@@ -53,7 +52,6 @@ trop.Gaussian.MH.square <- function(D, x0, mu, s, n, I=50){
   k <- ncol(D)-1
   i <- 1
   while(i <= n){
-    print(i)
     x1 <- TropicalPolytope.extrapolation.HAR(D, x0, I = I)
     x1 <- normaliz.vector(x1)
     r <- exp(-trop.dist(mu, x1)^2/s)/exp(-trop.dist(mu, x0)^2/s)

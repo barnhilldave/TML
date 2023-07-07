@@ -8,7 +8,7 @@
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' s <- 3 #number of vertices.  Here it is a tropical triangle
 #' d <- 3 ## dimension
 #' N <- 100 ## sample size

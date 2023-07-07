@@ -21,7 +21,6 @@ This function performs k-means clustering over the tropical projective torus
 }
 \examples{
 P <-Sim_points
-TFW<-Trop_FW(P)
 C<-3
 M<-10
 res<-TKmeans(P,C,M)

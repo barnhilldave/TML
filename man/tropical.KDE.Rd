@@ -23,7 +23,7 @@ This function calculates a non-parametric density estimate of a tree over the sp
 It mimics classical kernel density estimation by using a Gaussian kernel in conjunction with tropical distance.
 }
 \examples{
-\dontrun{
+\donttest{
 ### bw.nn function: from archived KDETree package
 bw.nn <- function(x,prop=0.2,tol=1e-6){
  out <- apply(x, 1, quantile, prop)

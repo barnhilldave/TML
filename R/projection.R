@@ -11,7 +11,6 @@
 #'D_s <-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 #'D <- c(0,7,-1)
 #'project_pi(D_s,D)
-#'
 
 project_pi<-function(D_s,D){
   d <- dim(D_s)
