@@ -3,17 +3,22 @@
 \name{draw.tpolytope}
 \alias{draw.tpolytope}
 \alias{draw.tpolytope.3d}
-\title{Draw a 3-D tropical polytope}
+\alias{draw.tpolytope.2d}
+\title{Draw a 2-D or 3-D tropical polytope}
 \usage{
-draw.tpolytope.3d(D, c)
+draw.tpolytope.3d(D, c, cc)
+
+draw.tpolytope.2d(D, c, cc)
 }
 \arguments{
 \item{D}{matrix of vertices of a tropical polytope; rows are the vertices}
 
 \item{c}{string; color to render the polytope.}
+
+\item{cc}{string; color to render the vertices.}
 }
 \value{
-3-D rendering of a tropical polytope.
+2-D or 3-D rendering of a tropical polytope.
 }
 \description{
 This command draws a three dimensional tropical polytope
@@ -21,8 +26,14 @@ This command draws a three dimensional tropical polytope
 \examples{
 D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)
 c<-'blue'
+cc<-'red'
+draw.tpolytope.3d(D,c,cc)
 
-draw.tpolytope.3d(D,c)
+D <- matrix(c(0,-2,2,0,-2,5,0,2,1,0,1,-1),4,3,TRUE)
+c <- 'blue'
+cc <- 'red'
+draw.tpolytope.2d(D,c,cc)
+
 
 }
 \author{
