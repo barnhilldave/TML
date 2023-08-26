@@ -3,7 +3,7 @@
 #' TML provides a suite of tools for machine learning application on data over the tropical semiring
 #'
 #' @docType package
-#' @import MASS lpSolveAPI Matrix rcdd combinat rgl magick gtools RcppAlgos Rfast phytools maps
+#' @import MASS lpSolveAPI Matrix rcdd combinat rgl magick gtools RcppAlgos Rfast phytools maps ROCR stringr
 #' @importFrom graphics points polygon
 #' @importFrom Rfast yule
 #' @importFrom stats runif rnorm cophenetic quantile cutree
@@ -14,7 +14,8 @@
 #' @importFrom grDevices rainbow
 #' @importFrom graphics lines segments
 #' @importFrom grDevices pdf
+#' @importFrom stats optim hclust as.dist
 #' @rawNamespace import(ape, except = yule)
 #' @name TML
-#' @aliases TML package-TML
+#' @aliases TML-package
 NULL
