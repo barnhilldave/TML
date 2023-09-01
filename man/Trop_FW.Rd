@@ -7,7 +7,7 @@
 Trop_FW(A)
 }
 \arguments{
-\item{A}{matrix of points defining a tropical polytope; rows are the tropical points}
+\item{A}{matrix with normalized tropical points as rows}
 }
 \value{
 numeric vector providing the tropical Fermat-Weber point for the tropical polytope

@@ -1,8 +1,7 @@
 #' Calculate the tropical Fermat-Weber point
 #'
 #' This function calculates the Fermat-Weber point for a tropical polytope
-#'
-#' @param A matrix of points defining a tropical polytope; rows are the tropical points
+#' @param A matrix with normalized tropical points as rows
 #' @return numeric vector providing the tropical Fermat-Weber point for the tropical polytope
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @references Lin, Bo and Ruriko Yoshida (2016). Tropical Fermat-Weber Points. SIAM J. Discret. Math. 32: 1229-1245.

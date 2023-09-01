@@ -2,10 +2,10 @@
 % Please edit documentation in R/Tropical.HAR.Gaussian.R
 \name{tropical.Gaussian}
 \alias{tropical.Gaussian}
-\alias{TropicalPolytope.extrapolation.HAR_NORM}
+\alias{tropical.gaussian}
 \title{Tropical Gaussian sampling about a center of mass}
 \usage{
-TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 1, M, S)
+tropical.gaussian(D_s, x0, I = 1, M, S)
 }
 \arguments{
 \item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex}
@@ -29,7 +29,7 @@ D_s <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
 x0 <- c(0,0,0)
 M <- c(0,5,5)
 S <- 2
-TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 50,M,S)
+tropical.gaussian(D_s, x0, I = 50,M,S)
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

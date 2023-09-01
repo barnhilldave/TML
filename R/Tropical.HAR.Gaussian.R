@@ -15,11 +15,11 @@
 #' x0 <- c(0,0,0)
 #' M <- c(0,5,5)
 #' S <- 2
-#' TropicalPolytope.extrapolation.HAR_NORM(D_s, x0, I = 50,M,S)
+#' tropical.gaussian(D_s, x0, I = 50,M,S)
 
 #'@export
 #'@rdname tropical.Gaussian
-TropicalPolytope.extrapolation.HAR_NORM <- function(D_s, x0, I = 1,M,S){
+tropical.gaussian <- function(D_s, x0, I = 1,M,S){
   k<-ncol(D_s)-1
   d <- dim(D_s) # dimension of matrix of vertices
   D <- normaliz.polytope(D_s) #D_s
