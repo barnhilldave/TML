@@ -24,8 +24,8 @@ It mimics classical kernel density estimation by using a Gaussian kernel in conj
 }
 \examples{
 \donttest{
-T1<-Sim_Trees1
-T2<-Sim_Trees2
+T1<-Sim_Trees15
+T2<-Sim_Trees25
 D <- rbind(T1, T2[1,])
 T <- dim(D)[1]
 X <- 1:T

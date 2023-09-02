@@ -16,7 +16,7 @@
 #' M<-matrix(c(2,2,2,3,6,4,2,4,7),3,3,TRUE)
 #' normaliz.polytope(M)
 #'
-#' M <- Sim_Trees1[1:3,]
+#' M <- Sim_Trees15[1:3,]
 #' normaliz.ultrametrics(M)
 #'
 #' @export

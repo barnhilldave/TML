@@ -11,8 +11,8 @@
 #' @examples
 #' \donttest{
 #' library(ROCR)
-#' T0 = Sim_Trees1
-#' T1 = Sim_Trees2
+#' T0 = Sim_Trees15
+#' T1 = Sim_Trees25
 #' D  = rbind(T0,T1)
 #' Y = c(rep(0,dim(T0)[1]), rep(1,dim(T1)[1]))
 #' N = length(Y)

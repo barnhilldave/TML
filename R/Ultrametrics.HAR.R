@@ -11,7 +11,7 @@
 #' @references Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
 #' @export
 #' @examples
-#'x0 <-Sim_Trees1[1,]
+#'x0 <-Sim_Trees15[1,]
 #'n<-10
 #'
 #'Ultrametrics.HAR(x0, n, I = 50, h = 1)

@@ -13,8 +13,8 @@
 #' @export
 #' @examples
 #' \donttest{
-#' T1<-Sim_Trees1
-#' T2<-Sim_Trees2
+#' T1<-Sim_Trees15
+#' T2<-Sim_Trees25
 #' D <- rbind(T1, T2[1,])
 #' M <- pw.trop.dist(D, D)
 #' bw.nn(M)

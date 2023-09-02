@@ -3,17 +3,58 @@
 \docType{data}
 \name{Sim_Trees1}
 \alias{Sim_Trees1}
-\title{Phylogenetic trees data simulated from the Coalescant model}
+\alias{Sim_Trees1025}
+\alias{Sim_Trees105}
+\alias{Sim_Trees11}
+\alias{Sim_Trees12}
+\alias{Sim_Trees15}
+\alias{Sim_Trees110}
+\title{Six data sets of phylogenetic trees data simulated from the Coalescant model.}
 \format{
-\subsection{\code{Sim_Trees1}}{
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
 
-A 1000 x 45 matrix where each row is an ultrametric representing a phylogenetic tree
-}
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
+
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
+
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
+
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
+
+An object of class \code{matrix} (inherits from \code{array}) with 1000 rows and 45 columns.
 }
 \usage{
-Sim_Trees1
+Sim_Trees1025
+
+Sim_Trees105
+
+Sim_Trees11
+
+Sim_Trees12
+
+Sim_Trees15
+
+Sim_Trees110
 }
 \description{
-1000 gene trees simulated from the Coalescant model based on a specified species
+Six data sets of 1000 gene trees simulated from the Coalescant model based on a specified species with each data set
+possessing a ratio of species depth to effective population of 0.25, 0.5, 1, 2, 5, and 10.
 }
+\keyword{1000}
+\keyword{45}
+\keyword{A}
+\keyword{a}
+\keyword{an}
 \keyword{datasets}
+\keyword{each}
+\keyword{gene}
+\keyword{is}
+\keyword{matrix}
+\keyword{phylogenetic}
+\keyword{representing}
+\keyword{row}
+\keyword{simulated}
+\keyword{tree}
+\keyword{ultrametric}
+\keyword{where}
+\keyword{x}
