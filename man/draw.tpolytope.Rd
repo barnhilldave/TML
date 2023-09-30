@@ -8,7 +8,7 @@
 \usage{
 draw.tpolytope.3d(D, c, cc)
 
-draw.tpolytope.2d(D, c, cc)
+draw.tpolytope.2d(D, c, cc, plt = TRUE)
 }
 \arguments{
 \item{D}{matrix of vertices of a tropical polytope; rows are the vertices}

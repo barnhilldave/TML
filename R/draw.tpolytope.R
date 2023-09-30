@@ -41,9 +41,11 @@ draw.tpolytope.3d <- function(D,c,cc){
 
 #' @rdname draw.tpolytope
 #' @export
-draw.tpolytope.2d<-function(D,c,cc){
+draw.tpolytope.2d<-function(D,c,cc,plt=TRUE){
   coms<-combn(c(1:nrow(D)),2)
-  plot(D[,2],D[,3],asp=1,pch=19,col='white',xlab='x2',ylab='x3')
+  if(plt==TRUE){
+    plot(D[,2],D[,3],asp=1,pch=19,col='white',xlab='x2',ylab='x3')
+  }
   for (i in 1:ncol(coms)){
     a<-coms[1,i]
     b<-coms[2,i]
