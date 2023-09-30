@@ -5,6 +5,7 @@
 #' @param D matrix of vertices of a tropical polytope; rows are the vertices
 #' @param c string; color to render the polytope.
 #' @param cc string; color to render the vertices.
+#' @param plt logical; initiate new plot visualization or not.
 #' @return 2-D or 3-D rendering of a tropical polytope.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name draw.tpolytope
@@ -13,12 +14,12 @@
 #'D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)
 #'c<-'blue'
 #'cc<-'red'
-#'draw.tpolytope.3d(D,c,cc)
+#'draw.tpolytope.3d(D,c,cc,plt=TRUE)
 #'
 #'D <- matrix(c(0,-2,2,0,-2,5,0,2,1,0,1,-1),4,3,TRUE)
 #'c <- 'blue'
 #'cc <- 'red'
-#'draw.tpolytope.2d(D,c,cc)
+#'draw.tpolytope.2d(D,c,cc,plt=TRUE)
 #'
 #'
 
