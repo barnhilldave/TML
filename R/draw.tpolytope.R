@@ -26,7 +26,7 @@
 ### Only for e = 4.
 #' @rdname draw.tpolytope
 #' @export
-draw.tpolytope.3d <- function(D,c,cc){
+draw.tpolytope.3d <- function(D,c,cc,plt=TRUE){
   d <- dim(D)
   D1 <- D
   for(i in 1:(d[1] - 1)){
@@ -35,7 +35,7 @@ draw.tpolytope.3d <- function(D,c,cc){
       D1 <- rbind(D1, M)
     }
   }
-  pre.draw.tpolytope.3d(D1, d[1],c,cc)
+  pre.draw.tpolytope.3d(D1, d[1],c,cc,plt)
 
 }
 
@@ -57,7 +57,7 @@ draw.tpolytope.2d<-function(D,c,cc,plt=TRUE){
   points(D[,2],D[,3],pch=19,col=cc)
 }
 
-pre.draw.tpolytope.3d <- function(D, v,c,cc){
+pre.draw.tpolytope.3d <- function(D, v,c,cc,plt=TRUE){
   d <- dim(D)
   seg <- matrix(rep(0, 3*choose(d[1], 2)*(2*3)), 3*choose(d[1], 2), 6)
   counter <- 1
@@ -77,6 +77,9 @@ pre.draw.tpolytope.3d <- function(D, v,c,cc){
              z=as.vector(t(seg[1:(counter-1), c(3,6)])), col = c, lwd = .2,tcl=-.9)
   for(i in 1:v)
     spheres3d(D[i, 2:4], radius = 0.05, color = cc)
-  axes3d()
-  title3d(xlab="X",ylab="Y",zlab="Z")
+  if(plt==TRUE){
+    axes3d()
+    title3d(xlab="X",ylab="Y",zlab="Z")
+  }
+
 }

@@ -6,7 +6,7 @@
 \alias{draw.tpolytope.2d}
 \title{Draw a 2-D or 3-D tropical polytope}
 \usage{
-draw.tpolytope.3d(D, c, cc)
+draw.tpolytope.3d(D, c, cc, plt = TRUE)
 
 draw.tpolytope.2d(D, c, cc, plt = TRUE)
 }
