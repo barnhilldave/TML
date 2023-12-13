@@ -4,23 +4,26 @@
 \alias{trop_bal.vert}
 \title{Calculate the minimum generating vertex set of a tropical ball}
 \usage{
-trop_bal.vert(x, d)
+trop_bal.vert(x, d, al = FALSE)
 }
 \arguments{
 \item{x}{matrix where each row is a point defining a tropical polytope}
 
 \item{d}{radius of the tropical ball in terms of tropical distance}
+
+\item{al}{logical; TRUE or FALSE to determine whether to enumerate all vertices of the tropical ball}
 }
 \value{
-square matrix of normalized tropical points defining the tropical ball. Rows are the points
+matrix of normalized tropical points defining the tropical ball. Rows are the points
 }
 \description{
-This function calculates the coordinates of the minimum vertex set of a tropical ball given a center point
+This function calculates the coordinates of the minimum or entire vertex set of a tropical ball given a center point
 }
 \examples{
-x <-c(0,3,7)
+x <-c(0,3,7,5)
 d <- 2
 trop_bal.vert(x,d)
+trop_bal.vert(x,d,al=TRUE)
 }
 \references{
 Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum Inscribed and Minimum Enclosing Tropical Balls of Tropical Polytopes and Applications to Volume Estimation and Uniform Sampling.
