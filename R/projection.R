@@ -1,4 +1,4 @@
-#' Project a point on the tropical projective torus onto a tropical polytope.
+#' Project a point on the tropical projective torus onto a tropical polytope
 #'
 #' This function projects points in the tropical projective torus onto a max- or min-plus tropical polytope based on tropical distance
 #'
@@ -14,7 +14,7 @@
 #'project_pi(D_s,D)
 #'project_pi(D_s,D,add='min')
 
-project_pi<-function(D_s,D,add='max'){
+project_pi<-function(D_s, D, add='max'){
   d <- dim(D_s)
   lambda <- rep(0, d[1])
   if(add=='max'){

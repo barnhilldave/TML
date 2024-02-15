@@ -6,7 +6,7 @@
 #' @param c string; color to render the polytope.
 #' @param cc string; color to render the vertices.
 #' @param plt logical; initiate new plot visualization or not.
-#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.
+#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'
 #' @return 2-D or 3-D rendering of a tropical polytope.
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name draw.tpolytope
@@ -29,7 +29,7 @@
 ### Only for e = 4.
 #' @rdname draw.tpolytope
 #' @export
-draw.tpolytope.3d <- function(D,c,cc,plt=TRUE,add='max'){
+draw.tpolytope.3d <- function(D, c, cc, plt=TRUE, add='max'){
   d <- dim(D)
   D1 <- D
   if(add=='max'){

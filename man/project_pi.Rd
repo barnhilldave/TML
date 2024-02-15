@@ -2,7 +2,7 @@
 % Please edit documentation in R/projection.R
 \name{project_pi}
 \alias{project_pi}
-\title{Project a point on the tropical projective torus onto a tropical polytope.}
+\title{Project a point on the tropical projective torus onto a tropical polytope}
 \usage{
 project_pi(D_s, D, add = "max")
 }

@@ -19,7 +19,7 @@ draw.tpolytope.2d(D, c, cc, plt = TRUE, add = "max")
 
 \item{plt}{logical; initiate new plot visualization or not.}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
 }
 \value{
 2-D or 3-D rendering of a tropical polytope.

@@ -1,4 +1,4 @@
-#' Gaussian-like Sampling on a max-plus tropical line segment
+#' Gaussian-like Sampling on a max- or min-plus tropical line segment
 #'
 #' This function samples points on a tropical line segment about a location parameter for a given scale parameter defined in terms of tropical distance
 #'
@@ -6,6 +6,7 @@
 #' @param D2 point in the tropical projective torus
 #' @param mu location parameter
 #' @param stdev scale parameter
+#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'
 #' @return point on the line segment defined by D1 and D2 sampled about mu
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
@@ -15,13 +16,14 @@
 #'mu<-c(0,7,2)
 #'sd<-1
 #'HAR.TLineSeg.Norm(D1, D2,mu,sd)
-#'
+#'HAR.TLineSeg.Norm(D1, D2,mu,sd,add='min')
 
-HAR.TLineSeg.Norm <- function(D1, D2,mu,stdev){
+HAR.TLineSeg.Norm <- function(D1, D2, mu, stdev, add='max'){
   d <- length(D1)
   D<-rbind(D1,D2)
   if(length(D1) != length(D2))
     warning("dimension is wrong!")
+  if(add=='max'){
   proj_mu<-project_pi(D,mu)
   l0<-trop.dist(D1,proj_mu)+min(D1-D2)
   pro_true<-FALSE
@@ -38,5 +40,25 @@ HAR.TLineSeg.Norm <- function(D1, D2,mu,stdev){
       pro_true<-TRUE
     }
   }
+  }
+  if(add=='min'){
+    proj_mu<-project_pi(D,mu,add='min')
+    l0<-trop.dist(D1,proj_mu)+min(D1-D2)
+    pro_true<-FALSE
+    while(pro_true==FALSE){
+      l <- rnorm(1, mean = 0, sd=stdev)
+      x_p <- rep(0, d)
+      for(i in 1:d){
+        x_p[i] <-min(((l0+l) + D2[i]), D1[i])
+      }
+      pro_x<-project_pi(D,x_p,add='min')
+      dist_pro<-trop.dist(x_p,pro_x)
+      if(dist_pro<=1e-8){
+        x1<-normaliz.vector(x_p)
+        pro_true<-TRUE
+      }
+    }
+  }
   return(x1)
 }
+

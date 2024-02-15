@@ -13,7 +13,7 @@ Points.TLineSeg(D1, D2, k = 20, add = "max")
 
 \item{k}{number of points}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
 }
 \value{
 matrix of k equally spaced points on a tropical line segment
@@ -24,8 +24,8 @@ This function calculates k equally spaced points on a tropical line segment
 \examples{
 D1 <-c(0,4,2)
 D2 <- c(0,7,-1)
-p<-Points.TLineSeg(D1, D2, k = 5)
-p<-Points.TLineSeg(D1, D2, k = 5,add='min')
+Points.TLineSeg(D1, D2, k = 5)
+Points.TLineSeg(D1, D2, k = 5,add='min')
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

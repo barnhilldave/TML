@@ -2,9 +2,9 @@
 % Please edit documentation in R/HAR.TLineSeg.Norm.R
 \name{HAR.TLineSeg.Norm}
 \alias{HAR.TLineSeg.Norm}
-\title{Gaussian-like Sampling on a max-plus tropical line segment}
+\title{Gaussian-like Sampling on a max- or min-plus tropical line segment}
 \usage{
-HAR.TLineSeg.Norm(D1, D2, mu, stdev)
+HAR.TLineSeg.Norm(D1, D2, mu, stdev, add = "max")
 }
 \arguments{
 \item{D1}{point in the tropical projective torus}
@@ -14,6 +14,8 @@ HAR.TLineSeg.Norm(D1, D2, mu, stdev)
 \item{mu}{location parameter}
 
 \item{stdev}{scale parameter}
+
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
 }
 \value{
 point on the line segment defined by D1 and D2 sampled about mu
@@ -27,7 +29,7 @@ D2 <- c(0,7,-1)
 mu<-c(0,7,2)
 sd<-1
 HAR.TLineSeg.Norm(D1, D2,mu,sd)
-
+HAR.TLineSeg.Norm(D1, D2,mu,sd,add='min')
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}
