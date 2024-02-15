@@ -4,12 +4,14 @@
 \alias{HAR.TLineSeg}
 \title{Uniformly sample from a max-plus tropical line segment}
 \usage{
-HAR.TLineSeg(D1, D2)
+HAR.TLineSeg(D1, D2, add = "max")
 }
 \arguments{
 \item{D1}{point in the tropical projective torus}
 
 \item{D2}{point in the tropical projective torus}
+
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
 }
 \value{
 point on the line segment defined by D1 and D2
@@ -20,7 +22,8 @@ This function uses a hit-and-run sampler to uniformly sample from a max-plus tro
 \examples{
 D1 <-c(0,4,2)
 D2 <- c(0,7,-1)
-HAR.TLineSeg(D1, D2)
+HAR.TLineSeg(D1, D2,add='max')
+#'HAR.TLineSeg(D1, D2,add='min')
 }
 \references{
 Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.

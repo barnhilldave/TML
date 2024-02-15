@@ -2,9 +2,9 @@
 % Please edit documentation in R/Points.TLineSeg.R
 \name{Points.TLineSeg}
 \alias{Points.TLineSeg}
-\title{Sample k equally spaced points on a max-plus tropical line segment}
+\title{Sample k equally spaced points on a max- or min-plus tropical line segment}
 \usage{
-Points.TLineSeg(D1, D2, k = 20)
+Points.TLineSeg(D1, D2, k = 20, add = "max")
 }
 \arguments{
 \item{D1}{point in the tropical projective torus}
@@ -12,6 +12,8 @@ Points.TLineSeg(D1, D2, k = 20)
 \item{D2}{point in the tropical projective torus}
 
 \item{k}{number of points}
+
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
 }
 \value{
 matrix of k equally spaced points on a tropical line segment
@@ -23,6 +25,7 @@ This function calculates k equally spaced points on a tropical line segment
 D1 <-c(0,4,2)
 D2 <- c(0,7,-1)
 p<-Points.TLineSeg(D1, D2, k = 5)
+p<-Points.TLineSeg(D1, D2, k = 5,add='min')
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

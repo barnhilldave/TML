@@ -4,23 +4,26 @@
 \alias{project_pi}
 \title{Project a point on the tropical projective torus onto a tropical polytope.}
 \usage{
-project_pi(D_s, D)
+project_pi(D_s, D, add = "max")
 }
 \arguments{
 \item{D_s}{matrix where each row is a point defining a tropical polytope}
 
 \item{D}{point to be projected onto D_s}
+
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
 }
 \value{
 projection of point D onto the tropical polytope defined by D_s
 }
 \description{
-This function projects points in the tropical projective torus onto a tropical polytope based on tropical distance
+This function projects points in the tropical projective torus onto a max- or min-plus tropical polytope based on tropical distance
 }
 \examples{
 D_s <-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 D <- c(0,7,-1)
 project_pi(D_s,D)
+project_pi(D_s,D,add='min')
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

@@ -4,7 +4,7 @@
 #'
 #' @param D1 point in the tropical projective torus
 #' @param D2 point in the tropical projective torus
-#' @param add logical; 'max' indicates a max-plus line segment and 'min' constructs a min-plus line segment
+#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.
 #' @return list of points defining the tropical line segment
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export
