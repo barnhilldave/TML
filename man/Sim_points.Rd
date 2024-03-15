@@ -5,15 +5,16 @@
 \alias{Sim_points}
 \title{Simulated points over the tropical projective torus}
 \format{
-\subsection{\code{Sim_points}}{
+\subsection{\code{Sim_points} A 150 x 3 matrix where each row is a point in the}{
 
-A 150 x 3 matrix where each row is a point in the tropical projective torus
+tropical projective torus
 }
 }
 \usage{
 Sim_points
 }
 \description{
-150 points generated using Gaussian-like Hit-and-Run sampling with three separate pairs of location and scale parameters
+150 points generated using Gaussian-like Hit-and-Run sampling with three
+separate pairs of location and scale parameters
 }
 \keyword{datasets}

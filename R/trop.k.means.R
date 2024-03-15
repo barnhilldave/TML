@@ -2,12 +2,15 @@
 #'
 #' This function performs k-means clustering over the tropical projective torus
 #'
-#' @param A matrix of points defining a tropical polytope; rows are the tropical points
+#' @param A matrix of points defining a tropical polytope; rows are the tropical
+#'   points
 #' @param C number of clusters
 #' @param M maximum number of iterations of algorithm to find cluster centroids
-#' @return list with matrix of observation classified by centroid; matrix of centroid coordinates; number of iterations used
+#' @return list with matrix of observation classified by centroid; matrix of
+#'   centroid coordinates; number of iterations used
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
-#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+#'   the Tropically Convex Sets.
 #' @export
 #' @examples
 #' P <-Sim_points
@@ -28,7 +31,7 @@ TKmeans<-function(A,C,M){
   ct<-0
   while(CL==FALSE|ct<=M){
     for (i in 1:C){
-      c<-Trop_FW(try[which(try[,ncol(try)]==i),1:(ncol(try)-1)])
+      c<-trop.FW(try[which(try[,ncol(try)]==i),1:(ncol(try)-1)])
       or_cents[i,]<-c
     }
     try1<-try

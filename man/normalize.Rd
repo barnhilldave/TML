@@ -17,13 +17,15 @@ normaliz.polytope(D)
 normaliz.ultrametrics(D)
 }
 \arguments{
-\item{D}{numeric vector in the tropical projective torus or a matrix of points in the tropical projective torus; for matrices, rows are the points}
+\item{D}{numeric vector in the tropical projective torus or a matrix of
+points in the tropical projective torus; for matrices, rows are the points}
 }
 \value{
 a single or set of normalized points with the first coordinate zero
 }
 \description{
-This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero
+This function normalizes a point or set of points in the tropical projective
+torus by making the first coordinate zero
 }
 \examples{
 D <-c(8,4,2)

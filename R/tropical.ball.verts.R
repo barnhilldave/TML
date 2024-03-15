@@ -12,11 +12,11 @@
 #' @examples
 #'x <-c(0,3,7,5)
 #'d <- 2
-#'trop_bal.vert(x,d)
-#'trop_bal.vert(x,d,add='min')
-#'trop_bal.vert(x,d,add='all')
+#'trop.bal.vert(x,d)
+#'trop.bal.vert(x,d,add='min')
+#'trop.bal.vert(x,d,add='all')
 
-trop_bal.vert<-function(x, d, add='max'){
+trop.bal.vert<-function(x, d, add='max'){
   dm<-length(x)
   if(add=='max'){
     A<-matrix(0,dm,dm,TRUE)

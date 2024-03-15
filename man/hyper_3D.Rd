@@ -5,20 +5,25 @@
 \alias{hyper3d}
 \title{2D or 3D rendering of max-plus or min-plus tropical hyperplane}
 \usage{
-hyper3d(D, di, mi, ma, plt = FALSE, add = "max")
+hyper3d(D, ext, min.ax, max.ax, plot = FALSE, add = "max")
 }
 \arguments{
-\item{D}{point in the tropical projective torus representing the apex of the hyperplane}
+\item{D}{point in the tropical projective torus representing the apex of the
+hyperplane}
 
-\item{di}{scalar; indicates how far the hyperplane should extend}
+\item{ext}{scalar; indicates how far the hyperplane should extend}
 
-\item{mi}{scalar; minimum value on axes of the plot}
+\item{min.ax}{scalar; value applied to define the minimum limits of the axes
+of the plot}
 
-\item{ma}{scalar; maximum value on axes of the plot}
+\item{max.ax}{scalar; value applied to define the maximum limits of the axes
+of the plot}
 
-\item{plt}{logical; if true produces a new plot otherwise overlays tropical hyperplane on existing plot}
+\item{plot}{logical; if true produces a new plot otherwise overlays tropical
+hyperplane on existing plot}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
+min-plus addition. Defaults to 'max'}
 }
 \value{
 2D or 3D rendering of max-plus or min-plus tropical hyperplane
@@ -29,18 +34,18 @@ This function renders a 2D or 3D max-plus or min-plus tropical hyperplane
 \examples{
 # 2D Example
 D <-c(0,0,0)
-di<-4
-mi<- -5
-ma<-5
-hyper3d(D,di,mi,ma,plt=TRUE,add='max')
+ext<-4
+min.ax<- 5
+max.ax<- 5
+hyper3d(D,ext,min.ax,max.ax,plot=TRUE)
 
 # 3D Example
 D <-c(0,0,0,0)
-di<-4
-mi<- -5
-ma<-5
-hyper3d(D,di,mi,ma,plt=TRUE)
-hyper3d(D,di,mi,ma,plt=TRUE,add='min')
+ext<-4
+min.ax<- 5
+max.ax<- 5
+hyper3d(D,ext,min.ax,max.ax,plot=TRUE)
+hyper3d(D,ext,min.ax,max.ax,plot=TRUE,add='min')
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

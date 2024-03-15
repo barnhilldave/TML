@@ -1,14 +1,17 @@
 #' Nearest neighbor bandwidth calculation
 #'
-#' This function finds the bandwidth for an ultrametric based on the tropical distance of the nearest point.
-#' The function provides the bandwidth input to trop.KDE and was originally used in the KDETrees package.
+#' This function finds the bandwidth for an ultrametric based on the tropical
+#' distance of the nearest point. The function provides the bandwidth input to
+#' trop.KDE and was originally used in the KDETrees package.
 #'
 #' @param x matrix; dissimilarity matrix between points in a data set
 #' @param prop proportion of observations that defines neighborhood of a point
 #' @param tol tolerance for zero bandwidth check
 #' @return a vector of bandwidths for each tree (row) in x
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
-#' @references Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+#' @references Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida,
+#'   R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree
+#'   Distributions. In Bioinformatics.
 #' @references \url{https://github.com/grady/kdetrees/blob/master/R/bw.R}
 #' @export
 #' @examples

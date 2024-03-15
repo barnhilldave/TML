@@ -19,7 +19,8 @@ Ultrametrics.HAR(x0, n, I = 1, h = 1)
 point in the space of ultrametrics over n leaves
 }
 \description{
-This sampler samples a point in the space of ultrametrics where each point represents an equidistant tree on n leaves
+This sampler samples a point in the space of ultrametrics where each point
+represents an equidistant tree on n leaves
 }
 \examples{
 x0 <-Sim_Trees15[1,]
@@ -29,7 +30,8 @@ Ultrametrics.HAR(x0, n, I = 50, h = 1)
 
 }
 \references{
-Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.
+Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and
+Run Sampling from Tropically Convex Sets.
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

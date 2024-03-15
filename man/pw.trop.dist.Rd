@@ -12,10 +12,12 @@ pw.trop.dist(D1, D2)
 \item{D2}{matrix of ultrametrics}
 }
 \value{
-matrix; dissimilarity matrix showing the tropical pairwise distance between each point
+matrix; dissimilarity matrix showing the tropical pairwise distance
+between each point
 }
 \description{
-Constructs the dissimilarity matrix based on the tropical distance between points in a dataset
+Constructs the dissimilarity matrix based on the tropical distance between
+points in a dataset
 }
 \examples{
 \donttest{
@@ -26,9 +28,12 @@ pw.trop.dist(D, D)
 }
 }
 \references{
-Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida,
+R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree
+Distributions. In Bioinformatics.
 
-Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
+Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe
+(2022). Tropical Density Estimation of Phylogenetic Trees.
 
 \url{https://github.com/grady/kdetrees/blob/master/R/dist.diss.R}
 }

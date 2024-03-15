@@ -17,8 +17,9 @@ bw.nn(x, prop = 0.2, tol = 1e-06)
 a vector of bandwidths for each tree (row) in x
 }
 \description{
-This function finds the bandwidth for an ultrametric based on the tropical distance of the nearest point.
-The function provides the bandwidth input to trop.KDE and was originally used in the KDETrees package.
+This function finds the bandwidth for an ultrametric based on the tropical
+distance of the nearest point. The function provides the bandwidth input to
+trop.KDE and was originally used in the KDETrees package.
 }
 \examples{
 \donttest{
@@ -30,7 +31,9 @@ bw.nn(M)
 }
 }
 \references{
-Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida,
+R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree
+Distributions. In Bioinformatics.
 
 \url{https://github.com/grady/kdetrees/blob/master/R/bw.R}
 }

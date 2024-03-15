@@ -16,11 +16,13 @@ tropical.KDE(D, n, sigma, h = 2)
 \item{h}{height of the tree}
 }
 \value{
-list containing center point and radius of minimum enclosing ball of P
+list containing center point and radius of minimum enclosing ball of
+P
 }
 \description{
-This function calculates a non-parametric density estimate of a tree over the space of phylogenetic trees on m leaves.
-It mimics classical kernel density estimation by using a Gaussian kernel in conjunction with tropical distance.
+This function calculates a non-parametric density estimate of a tree over the
+space of phylogenetic trees on m leaves. It mimics classical kernel density
+estimation by using a Gaussian kernel in conjunction with tropical distance.
 }
 \examples{
 \donttest{
@@ -36,9 +38,12 @@ Q5 <- P_5[T]
 }
 }
 \references{
-Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
+Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida,
+R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree
+Distributions. In Bioinformatics.
 
-Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
+Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe
+(2022). Tropical Density Estimation of Phylogenetic Trees.
 }
 \author{
 Ruriko Yoshida \email{ryoshida@nps.edu}

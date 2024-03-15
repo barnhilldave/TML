@@ -1,13 +1,18 @@
 #' Constructs the dissimilarity matrix for a set of ultrametrics
 #'
-#' Constructs the dissimilarity matrix based on the tropical distance between points in a dataset
+#' Constructs the dissimilarity matrix based on the tropical distance between
+#' points in a dataset
 #'
 #' @param D1 matrix of ultrametrics
 #' @param D2 matrix of ultrametrics
-#' @return matrix; dissimilarity matrix showing the tropical pairwise distance between each point
+#' @return matrix; dissimilarity matrix showing the tropical pairwise distance
+#'   between each point
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
-#' @references Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida, R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree Distributions. In Bioinformatics.
-#' @references Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe (2022). Tropical Density Estimation of Phylogenetic Trees.
+#' @references Weyenberg, G., Huggins, P., Schardl, C., Howe, D. K., & Yoshida,
+#'   R. (2014). kdetrees: Nonparametric Estimation of Phylogenetic Tree
+#'   Distributions. In Bioinformatics.
+#' @references Yoshida, Ruriko, David Barnhill, Keiji Miura and Daniel Howe
+#'   (2022). Tropical Density Estimation of Phylogenetic Trees.
 #' @references \url{https://github.com/grady/kdetrees/blob/master/R/dist.diss.R}
 #' @export
 #' @examples

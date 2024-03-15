@@ -1,11 +1,13 @@
 #' Ratio of within and between tropical measures for k-means clusters
 #'
-#' Ratio of within and between cluster tropical measures for k-means derived clusters
+#' Ratio of within and between cluster tropical measures for k-means derived
+#' clusters
 #' @param A matrix of tropical points; rows are points
 #' @param C number of clusters
 #' @param method method to use for within cluster measure; "avg" or "max"
 #' @return vector of ratios for each cluster
-#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+#'   the Tropically Convex Sets.
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

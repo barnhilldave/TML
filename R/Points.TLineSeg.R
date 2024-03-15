@@ -1,14 +1,15 @@
-#' Sample k equally spaced points on a max- or min-plus tropical line segment
+#'Sample k equally spaced points on a max- or min-plus tropical line segment
 #'
-#' This function calculates k equally spaced points on a tropical line segment
+#'This function calculates k equally spaced points on a tropical line segment
 #'
-#' @param D1 point in the tropical projective torus
-#' @param D2 point in the tropical projective torus
-#' @param k number of points
-#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'
-#' @return matrix of k equally spaced points on a tropical line segment
-#' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
-#' @export
+#'@param D1 point in the tropical projective torus
+#'@param D2 point in the tropical projective torus
+#'@param k number of points
+#'@param add string; 'max' indicates max-plus addition, 'min' indicates min-plus
+#'  addition. Defaults to 'max'
+#'@return matrix of k equally spaced points on a tropical line segment
+#'@author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#'@export
 #' @examples
 #'D1 <-c(0,4,2)
 #'D2 <- c(0,7,-1)

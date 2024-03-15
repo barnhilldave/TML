@@ -1,11 +1,14 @@
-#' Ratio of within and between tropical measures for tropical hierarchical clusters
+#' Ratio of within and between tropical measures for tropical hierarchical
+#' clusters
 #'
-#' Ratio of within and between cluster tropical measures for a set hierarchical clusters
+#' Ratio of within and between cluster tropical measures for a set hierarchical
+#' clusters
 #' @param A matrix of tropical points; rows are points
 #' @param V list of clusters where each cluster is defined as a matrix
 #' @param method method to use for within cluster measure; "avg" or "max"
 #' @return vector of ratios for each cluster
-#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+#'   the Tropically Convex Sets.
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

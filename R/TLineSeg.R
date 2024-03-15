@@ -1,13 +1,14 @@
-#' Construct a max- or min-plus tropical line segment between two points
+#'Construct a max- or min-plus tropical line segment between two points
 #'
-#' This function constructs a max-plus tropical line segment between two points
+#'This function constructs a max-plus tropical line segment between two points
 #'
-#' @param D1 point in the tropical projective torus
-#' @param D2 point in the tropical projective torus
-#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'
-#' @return list of points defining the tropical line segment
-#' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
-#' @export
+#'@param D1 point in the tropical projective torus
+#'@param D2 point in the tropical projective torus
+#'@param add string; 'max' indicates max-plus addition, 'min' indicates min-plus
+#'  addition. Defaults to 'max'
+#'@return list of points defining the tropical line segment
+#'@author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#'@export
 #' @examples
 #'D1 <-c(0,4,2)
 #'D2 <- c(0,7,-1)

@@ -2,20 +2,25 @@
 % Please edit documentation in R/trop.bet.measure.HC.R
 \name{over_bet_HC}
 \alias{over_bet_HC}
-\title{Tropical cluster betweeness measure for each cluster in a set of hierarchical clusters}
+\title{Tropical cluster betweeness measure for each cluster in a set of hierarchical
+clusters}
 \usage{
 over_bet_HC(A, V)
 }
 \arguments{
-\item{A}{matrix of tropical points; rows are points with the last column representing a numbered cluster assignment}
+\item{A}{matrix of tropical points; rows are points with the last column
+representing a numbered cluster assignment}
 
-\item{V}{list of clusters defined as matrices derived from agglomerative or divisive hierarchical clustering}
+\item{V}{list of clusters defined as matrices derived from agglomerative or
+divisive hierarchical clustering}
 }
 \value{
 vector of betweenness cluster measures
 }
 \description{
-This function calculates an overall betweenness measure based on tropical distance between a set of clusters derived from tropical hierarchical clustering
+This function calculates an overall betweenness measure based on tropical
+distance between a set of clusters derived from tropical hierarchical
+clustering
 }
 \examples{
 har<-rbind(Sim_points[1:20,],Sim_points[51:70,])
@@ -25,7 +30,8 @@ inds<-V[[2]][[38]]
 over_bet_HC(har,inds)
 }
 \references{
-David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

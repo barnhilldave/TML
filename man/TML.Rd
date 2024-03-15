@@ -6,5 +6,6 @@
 \alias{TML-package}
 \title{Tropical Machine Learning in R}
 \description{
-TML provides a suite of tools for machine learning application on data over the tropical semiring
+TML provides a suite of tools for machine learning application on data over
+the tropical semiring
 }

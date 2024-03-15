@@ -1,9 +1,12 @@
 #' Plotting PCA-derived tropical triangles
 #'
-#' This function conducts tropical PCA to find the best fit tropical triangle given data defined in the tropical projective torus.
-#' It employs the vertex HAR with extrapolation sampler to sample points to determine the vertices of the tropical triangle.
+#' This function conducts tropical PCA to find the best fit tropical triangle
+#' given data defined in the tropical projective torus. It employs the vertex
+#' HAR with extrapolation sampler to sample points to determine the vertices of
+#' the tropical triangle.
 #' @param S inital set of vertices for the tropical triangle
-#' @param D matrix of data where each row is an observation in the tropical projective torus
+#' @param D matrix of data where each row is an observation in the tropical
+#'   projective torus
 #' @return rendering of tropical triangle saved to current directory
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @export

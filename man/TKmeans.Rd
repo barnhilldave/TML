@@ -7,14 +7,16 @@
 TKmeans(A, C, M)
 }
 \arguments{
-\item{A}{matrix of points defining a tropical polytope; rows are the tropical points}
+\item{A}{matrix of points defining a tropical polytope; rows are the tropical
+points}
 
 \item{C}{number of clusters}
 
 \item{M}{maximum number of iterations of algorithm to find cluster centroids}
 }
 \value{
-list with matrix of observation classified by centroid; matrix of centroid coordinates; number of iterations used
+list with matrix of observation classified by centroid; matrix of
+centroid coordinates; number of iterations used
 }
 \description{
 This function performs k-means clustering over the tropical projective torus
@@ -31,7 +33,8 @@ plot(try[,2],try[,3],col=try[,4],asp=1,xlab='x2',ylab='x3')
 points(cen[,2],cen[,3],col=c('purple','hotpink','orange'),pch=19)
 }
 \references{
-David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

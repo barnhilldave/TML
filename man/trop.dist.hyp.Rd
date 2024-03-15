@@ -11,7 +11,8 @@ trop.dist.hyp(O, x0, add = "max")
 
 \item{x0}{point of interest; numeric vector}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
+min-plus addition. Defaults to 'max'}
 }
 \value{
 tropical distance to max-plus tropical hyperplane

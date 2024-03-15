@@ -1,10 +1,14 @@
-#' Tropical cluster betweeness measure for a each of a set of k-means derived set of clusters
+#' Tropical cluster betweeness measure for a each of a set of k-means derived
+#' set of clusters
 #'
-#' This function calculates an overall betweenness measure between a set of clusters derived from tropical k-means clustering
-#' @param A matrix of tropical points; rows are points with the last column representing a numbered cluster assignment
+#' This function calculates an overall betweenness measure between a set of
+#' clusters derived from tropical k-means clustering
+#' @param A matrix of tropical points; rows are points with the last column
+#'   representing a numbered cluster assignment
 #' @param C number of clusters
 #' @return betweenness cluster measure
-#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+#'   the Tropically Convex Sets.
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

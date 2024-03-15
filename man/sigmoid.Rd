@@ -19,7 +19,8 @@ Returns the sigmoid function valuation
 sigmoid(0) # 0.5
 }
 \references{
-Aliatimis, Georgios, Ruriko Yoshida, Burak Boyaci and James A. Grant (2023). Tropical Logistic Regression on Space of Phylogenetic Trees
+Aliatimis, Georgios, Ruriko Yoshida, Burak Boyaci and James A.
+Grant (2023). Tropical Logistic Regression on Space of Phylogenetic Trees
 }
 \author{
 Georgios Aliatimis \email{g.aliatimis@lancaster.ac.uk}

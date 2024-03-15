@@ -9,14 +9,17 @@ trop.tri.plot.w.pts(S, D)
 \arguments{
 \item{S}{inital set of vertices for the tropical triangle}
 
-\item{D}{matrix of data where each row is an observation in the tropical projective torus}
+\item{D}{matrix of data where each row is an observation in the tropical
+projective torus}
 }
 \value{
 rendering of tropical triangle saved to current directory
 }
 \description{
-This function conducts tropical PCA to find the best fit tropical triangle given data defined in the tropical projective torus.
-It employs the vertex HAR with extrapolation sampler to sample points to determine the vertices of the tropical triangle.
+This function conducts tropical PCA to find the best fit tropical triangle
+given data defined in the tropical projective torus. It employs the vertex
+HAR with extrapolation sampler to sample points to determine the vertices of
+the tropical triangle.
 }
 \examples{
 \donttest{

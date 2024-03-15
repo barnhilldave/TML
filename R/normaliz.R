@@ -1,8 +1,10 @@
 #' Normalize a point or set of points in the tropical projective torus
 #'
-#' This function normalizes a point or set of points in the tropical projective torus by making the first coordinate zero
+#' This function normalizes a point or set of points in the tropical projective
+#' torus by making the first coordinate zero
 #'
-#' @param D numeric vector in the tropical projective torus or a matrix of points in the tropical projective torus; for matrices, rows are the points
+#' @param D numeric vector in the tropical projective torus or a matrix of
+#'   points in the tropical projective torus; for matrices, rows are the points
 #' @return a single or set of normalized points with the first coordinate zero
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @name normalize

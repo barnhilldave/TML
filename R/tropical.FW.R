@@ -1,18 +1,20 @@
-#' Calculate the tropical Fermat-Weber point
+#'Calculate the tropical Fermat-Weber point
 #'
-#' This function calculates the Fermat-Weber point for a tropical polytope
-#' @param A matrix with normalized tropical points as rows
-#' @return numeric vector providing the tropical Fermat-Weber point for the tropical polytope
-#' @author David Barnhill \email{david.barnhill@@nps.edu}
-#' @references Lin, Bo and Ruriko Yoshida (2016). Tropical Fermat-Weber Points. SIAM J. Discret. Math. 32: 1229-1245.
-#' @export
+#'This function calculates the Fermat-Weber point for a tropical polytope
+#'@param A matrix with normalized tropical points as rows
+#'@return numeric vector providing the tropical Fermat-Weber point for the
+#'  tropical polytope
+#'@author David Barnhill \email{david.barnhill@@nps.edu}
+#'@references Lin, Bo and Ruriko Yoshida (2016). Tropical Fermat-Weber Points.
+#'  SIAM J. Discret. Math. 32: 1229-1245.
+#'@export
 #' @examples
 #'P <-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 #'
-#'Trop_FW(P)
+#'trop.FW(P)
 #'
 
-Trop_FW<-function(A){
+trop.FW<-function(A){
   perms<-permutations(ncol(A),2)
   mins<-apply(A,2,min)
   if(any(mins<0)){

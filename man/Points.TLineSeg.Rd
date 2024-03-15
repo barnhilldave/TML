@@ -13,7 +13,8 @@ Points.TLineSeg(D1, D2, k = 20, add = "max")
 
 \item{k}{number of points}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus
+addition. Defaults to 'max'}
 }
 \value{
 matrix of k equally spaced points on a tropical line segment

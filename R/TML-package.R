@@ -1,9 +1,11 @@
 #' Tropical Machine Learning in R
 #'
-#' TML provides a suite of tools for machine learning application on data over the tropical semiring
+#' TML provides a suite of tools for machine learning application on data over
+#' the tropical semiring
 #'
 #' @docType package
-#' @import MASS lpSolveAPI Matrix rcdd combinat rgl magick gtools RcppAlgos Rfast phytools maps ROCR stringr
+#' @import MASS lpSolveAPI Matrix rcdd combinat rgl gtools RcppAlgos
+#'   Rfast phytools maps ROCR
 #' @importFrom graphics points polygon
 #' @importFrom Rfast yule
 #' @importFrom stats runif rnorm cophenetic quantile cutree
@@ -19,3 +21,4 @@
 #' @name TML
 #' @aliases TML-package
 NULL
+

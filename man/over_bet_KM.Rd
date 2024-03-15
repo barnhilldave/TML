@@ -2,12 +2,14 @@
 % Please edit documentation in R/trop.clus.bet.KM.R
 \name{over_bet_KM}
 \alias{over_bet_KM}
-\title{Tropical cluster betweeness measure for a each of a set of k-means derived set of clusters}
+\title{Tropical cluster betweeness measure for a each of a set of k-means derived
+set of clusters}
 \usage{
 over_bet_KM(A, C)
 }
 \arguments{
-\item{A}{matrix of tropical points; rows are points with the last column representing a numbered cluster assignment}
+\item{A}{matrix of tropical points; rows are points with the last column
+representing a numbered cluster assignment}
 
 \item{C}{number of clusters}
 }
@@ -15,7 +17,8 @@ over_bet_KM(A, C)
 betweenness cluster measure
 }
 \description{
-This function calculates an overall betweenness measure between a set of clusters derived from tropical k-means clustering
+This function calculates an overall betweenness measure between a set of
+clusters derived from tropical k-means clustering
 }
 \examples{
 
@@ -27,7 +30,8 @@ C<-3
 over_bet_KM(cl_pt,C)
 }
 \references{
-David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

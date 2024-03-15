@@ -1,10 +1,16 @@
-#' Tropical cluster betweeness measure for each cluster in a set of hierarchical clusters
+#' Tropical cluster betweeness measure for each cluster in a set of hierarchical
+#' clusters
 #'
-#' This function calculates an overall betweenness measure based on tropical distance between a set of clusters derived from tropical hierarchical clustering
-#' @param A matrix of tropical points; rows are points with the last column representing a numbered cluster assignment
-#' @param V list of clusters defined as matrices derived from agglomerative or divisive hierarchical clustering
+#' This function calculates an overall betweenness measure based on tropical
+#' distance between a set of clusters derived from tropical hierarchical
+#' clustering
+#' @param A matrix of tropical points; rows are points with the last column
+#'   representing a numbered cluster assignment
+#' @param V list of clusters defined as matrices derived from agglomerative or
+#'   divisive hierarchical clustering
 #' @return vector of betweenness cluster measures
-#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+#' @references David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+#'   the Tropically Convex Sets.
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export
 #' @examples

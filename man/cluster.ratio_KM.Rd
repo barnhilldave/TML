@@ -17,7 +17,8 @@ cluster.ratio_KM(A, C, method = "avg")
 vector of ratios for each cluster
 }
 \description{
-Ratio of within and between cluster tropical measures for k-means derived clusters
+Ratio of within and between cluster tropical measures for k-means derived
+clusters
 }
 \examples{
 
@@ -29,7 +30,8 @@ C<-3
 cluster.ratio_KM(cl_pt,C,method='avg')
 }
 \references{
-David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

@@ -9,13 +9,15 @@ trop_wi_dist(D1, method = "avg")
 \arguments{
 \item{D1}{matrix of tropical points; rows are points}
 
-\item{method}{metric to measure; "avg" is the average pairwise tropical distance; "max" is the maximum pairwise tropical distance}
+\item{method}{metric to measure; "avg" is the average pairwise tropical
+distance; "max" is the maximum pairwise tropical distance}
 }
 \value{
 within cluster measure
 }
 \description{
-This function calculates a within cluster measure by measuring the pairwise tropical distance between points in the cluster.
+This function calculates a within cluster measure by measuring the pairwise
+tropical distance between points in the cluster.
 }
 \examples{
 D<-Sim_points
@@ -23,7 +25,8 @@ avg.m<-trop_wi_dist(D, method='avg')
 max.m<-trop_wi_dist(D, method='avg')
 }
 \references{
-David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over the Tropically Convex Sets.
+David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over
+the Tropically Convex Sets.
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

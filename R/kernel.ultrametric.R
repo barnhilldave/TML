@@ -1,6 +1,7 @@
 #' Kernel Function for Ultrametrics
 #'
-#' This function calculates a non-parametric density for ultrametrics using a Gaussian kernel in conjunction with a tropical distance
+#' This function calculates a non-parametric density for ultrametrics using a
+#' Gaussian kernel in conjunction with a tropical distance
 #'
 #' @param x numeric vector representing a sampled ultrametric
 #' @param mu numeric vector representing the centroid ultrametric

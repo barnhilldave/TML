@@ -3,7 +3,8 @@
 #' Construct a tropical geodesic between points in the tropical projective torus
 #' @param D1 point in the tropical projective torus
 #' @param D2 point in the tropical projective torus
-#' @return list with the tropical line segment between the two points and the distance between points
+#' @return list with the tropical line segment between the two points and the
+#'   distance between points
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @noRd
 tropical.geodesic.dim.2 <- function(D1, D2, flag = 0){

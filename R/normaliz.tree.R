@@ -1,12 +1,12 @@
-#' Normalize a phylogenetic tree
+#'Normalize a phylogenetic tree
 #'
-#' This function normalizes the height of a phylogenetic tree
+#'This function normalizes the height of a phylogenetic tree
 #'
-#' @param D numeric vector; ultrametric equidistant tree
-#' @param h desired height; defaults to 1
-#' @return normalized equidistant tree
-#' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
-#' @export
+#'@param D numeric vector; ultrametric equidistant tree
+#'@param h desired height; defaults to 1
+#'@return normalized equidistant tree
+#'@author Ruriko Yoshida \email{ryoshida@@nps.edu}
+#'@export
 #' @examples
 #'D <-c(4,4,2)
 #'normaliz.tree(D, h=1)

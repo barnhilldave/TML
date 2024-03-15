@@ -4,7 +4,8 @@
 #'
 #' @param O normal vector of a tropical hyperplane; numeric vector
 #' @param x0 point of interest; numeric vector
-#' @param add string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'.
+#' @param add string; 'max' indicates max-plus addition, 'min' indicates
+#'   min-plus addition. Defaults to 'max'
 #' @return tropical distance to max-plus tropical hyperplane
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
 #' @export

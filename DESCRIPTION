@@ -1,7 +1,7 @@
 Package: TML
 Type: Package
 Title: Tropical Geometry Tools for Machine Learning
-Version: 1.2.0
+Version: 2.2.0
 Authors@R: c(person('David', 'Barnhill', email='david.barnhill@nps.edu',role = c('aut','cre'), comment = c(ORCID = "0009-0006-2781-7434")),person('Ruriko', 'Yoshida', role = c('aut')),person('Georgios','Aliatimis',role=c('aut')),person('Keiji','Miura',role=c('aut')))
 Description: Suite of tropical geometric tools for use in machine learning applications. These methods may be summarized in the following references: Yoshida, et al. (2022) <arxiv:2209.15045>, Barnhill et al. (2023) <arxiv:2303.02539>, Barnhill and Yoshida (2023) <doi:10.3390/math11153433>, Aliatimis et al. (2023) <arXiv:2306.08796>, Yoshida et al. (2022) <arXiv:2206.04206>, and Yoshida et al. (2019) <doi:10.1007/s11538-018-0493-4>.
 License: MIT + file LICENSE
@@ -18,7 +18,6 @@ Imports: MASS,
          gtools,
          lpSolve, 
          lpSolveAPI, 
-         magick, 
          miscTools, 
          phangorn, 
          rcdd,
@@ -28,9 +27,11 @@ Imports: MASS,
          maps,
          cluster,
          ROCR,
-         stringr,
          stats
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

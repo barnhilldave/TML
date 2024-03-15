@@ -2,6 +2,7 @@
 #'
 #' This function conducts tropical PCA to find the best fit tropical triangle given data defined in the tropical projective torus.
 #' It employs the vertex HAR with extrapolation sampler to sample points to determine the vertices of the tropical triangle.
+#'
 #' @param S inital set of vertices for the tropical triangle
 #' @param D matrix of data where each row is an observation in the tropical projective torus
 #' @param V matrix of vertices defining a polytope encompassing D
@@ -27,7 +28,7 @@
 #' index <- sample(1:N, s)
 #' S <- D[index,]
 
-#'DD <- pre.pplot.pro(S, D)
+#' DD <- pre.pplot.pro(S, D)
 #'for(i in 1:N)
 #'  DD[i, ] <- normaliz.vector(DD[i, ])
 #'
@@ -44,25 +45,25 @@ tropical.PCA.Polytope <- function(S, D, V, I = 1,k){
   d <- dim(D)
   s <- dim(S)
   ## s[1] is the number of principal components of the tropical PCA
-  P <- Sum.Residuals(S, D)
-  S.star <- S
-  S0 <- S
-  for(i in 1:I){
-    for(j in 1:s[1]){
-      Sp <- S0
-      Sp[j, ] <- TropicalPolytope.extrapolation.HAR(V, Sp[j, ], k)
-      A <- Sum.Residuals(S0, D)/Sum.Residuals(Sp, D)
-      if(runif(1)<A){
-        S0 <- Sp       # accept move with probabily min(1,A)
+    P <- Sum.Residuals(S, D)
+    S.star <- S
+    S0 <- S
+    for(i in 1:I){
+      for(j in 1:s[1]){
+        Sp <- S0
+        Sp[j, ] <- VE.HAR(V, Sp[j, ], k)
+        A <- Sum.Residuals(S0, D)/Sum.Residuals(Sp, D)
+        if(runif(1)<A){
+          S0 <- Sp       # accept move with probabily min(1,A)
+        }
+        if(Sum.Residuals(S0, D) < Sum.Residuals(S.star, D))
+          S.star <- S0
       }
-      if(Sum.Residuals(S0, D) < Sum.Residuals(S.star, D))
-        S.star <- S0
     }
-  }
-  D1 <- D
-  for(i in 1:d[1])
-    D1[i, ] <- normaliz.vector(project_pi(S.star, D[i,]))
-
+    D1 <- D
+    for(i in 1:d[1]){
+      D1[i, ] <- normaliz.vector(project.pi(S.star, D[i,]))
+    }
   return(list(Sum.Residuals(S.star, D), S.star, D1))
 }
 
@@ -72,7 +73,7 @@ Sum.Residuals <- function(S, D){
   ## d[1] is the sample size
   y <- 0
   for(i in 1:d[1]){
-    y <- y + trop.dist(D[i,], project_pi(S, D[i,]))
+    y <- y + trop.dist(D[i,], project.pi(S, D[i,]))
   }
   return(y)
 }

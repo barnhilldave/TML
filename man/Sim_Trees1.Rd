@@ -37,8 +37,9 @@ Sim_Trees15
 Sim_Trees110
 }
 \description{
-Six data sets of 1000 gene trees simulated from the Coalescant model based on a specified species with each data set
-possessing a ratio of species depth to effective population of 0.25, 0.5, 1, 2, 5, and 10.
+Six data sets of 1000 gene trees simulated from the Coalescant model based on
+a specified species with each data set possessing a ratio of species depth to
+effective population of 0.25, 0.5, 1, 2, 5, and 10.
 }
 \keyword{1000}
 \keyword{45}

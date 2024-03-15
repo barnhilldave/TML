@@ -6,20 +6,21 @@
 \alias{draw.tpolytope.2d}
 \title{Draw a 2-D or 3-D tropical polytope}
 \usage{
-draw.tpolytope.3d(D, c, cc, plt = TRUE, add = "max")
+draw.tpolytope.3d(D, col_lines, col_verts, plot = TRUE, add = "max")
 
-draw.tpolytope.2d(D, c, cc, plt = TRUE, add = "max")
+draw.tpolytope.2d(D, col_lines, col_verts, plot = TRUE, add = "max")
 }
 \arguments{
 \item{D}{matrix of vertices of a tropical polytope; rows are the vertices}
 
-\item{c}{string; color to render the polytope.}
+\item{col_lines}{string; color to render the polytope.}
 
-\item{cc}{string; color to render the vertices.}
+\item{col_verts}{string; color to render the vertices.}
 
-\item{plt}{logical; initiate new plot visualization or not.}
+\item{plot}{logical; initiate new plot visualization or not.}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
+\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus
+addition. Defaults to 'max'}
 }
 \value{
 2-D or 3-D rendering of a tropical polytope.
@@ -29,16 +30,16 @@ This command draws a three dimensional tropical polytope
 }
 \examples{
 D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)
-c<-'blue'
-cc<-'red'
-draw.tpolytope.3d(D,c,cc,plt=TRUE)
-draw.tpolytope.3d(D,c,cc,plt=TRUE,add='min')
+col_lines<-'blue'
+col_verts<-'red'
+draw.tpolytope.3d(D,col_lines,col_verts,plot=TRUE)
+draw.tpolytope.3d(D,col_lines,col_verts,plot=TRUE,add='min')
 
 D <- matrix(c(0,-2,2,0,-2,5,0,2,1,0,1,-1),4,3,TRUE)
-c <- 'blue'
-cc <- 'red'
-draw.tpolytope.2d(D,c,cc,plt=TRUE)
-draw.tpolytope.2d(D,c,cc,plt=TRUE,add='min')
+col_lines <- 'blue'
+col_verts <- 'red'
+draw.tpolytope.2d(D,col_lines,col_verts,plot=TRUE)
+draw.tpolytope.2d(D,col_lines,col_verts,plot=TRUE,add='min')
 
 }
 \author{
