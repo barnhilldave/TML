@@ -25,7 +25,7 @@ clustering
 \examples{
 har<-rbind(Sim_points[1:20,],Sim_points[51:70,])
 
-V<-Tropical.HC.AGNES(har, method="average")
+V<-Tropical.HC.AGNES(har, method=mean)
 inds<-V[[2]][[38]]
 over_bet_HC(har,inds)
 }

@@ -18,7 +18,7 @@ test_that("2D Max-Tropical Hyperplane Plot ", {
   di<-runif(1,2,6)
   mi<-di
   ma<-di
-  hyper3d(v_star,di,mi,ma,plot=TRUE)
+  draw.thyper(v_star,di,mi,ma,plot=TRUE)
   expect_true(TRUE)
 })
 
@@ -27,7 +27,7 @@ test_that("2D Min-Tropical Hyperplane Plot ", {
   di<-runif(1,2,6)
   mi<-di
   ma<-di
-  hyper3d(v_star,di,mi,ma,plot=TRUE,add='min')
+  draw.thyper(v_star,di,mi,ma,plot=TRUE,tadd=min)
   expect_true(TRUE)
 })
 
@@ -36,7 +36,7 @@ test_that("3D Max-Tropical Hyperplane Plot ", {
   di<-runif(1,2,6)
   mi<-di
   ma<-di
-  hyper3d(v_star,di,mi,ma,plot=TRUE)
+  draw.thyper(v_star,di,mi,ma,plot=TRUE)
   expect_true(TRUE)
 })
 
@@ -45,7 +45,7 @@ test_that("3D Min-Tropical Hyperplane Plot ", {
   di<-runif(1,2,6)
   mi<-di
   ma<-di
-  hyper3d(v_star,di,mi,ma,plot=TRUE,add='min')
+  draw.thyper(v_star,di,mi,ma,plot=TRUE,tadd=min)
   expect_true(TRUE)
 })
 
@@ -66,13 +66,13 @@ test_that("3D Max-Tropical Polytope Plot", {
 test_that("2D Min-Tropical Polytope Plot", {
   P<-matrix(c(rep(runif(3,-1e3,1e3)),rep(runif(3,-1e3,1e3)),rep(runif(3,-1e3,1e3))),3,3,TRUE)
   P_star<-P-P[,1]
-  draw.tpolytope.2d(P_star,col_lines='red',col_verts='lightblue',plot=TRUE,add='min')
+  draw.tpolytope.2d(P_star,col_lines='red',col_verts='lightblue',plot=TRUE,tadd=min)
   expect_true(TRUE)
 })
 
 test_that("3D Min-Tropical Polytope Plot", {
   P<-matrix(c(rep(runif(4,-1e3,1e3)),rep(runif(4,-1e3,1e3)),rep(runif(4,-1e3,1e3)),rep(runif(4,-1e3,1e3))),4,4,TRUE)
   P_star<-P-P[,1]
-  draw.tpolytope.3d(P_star,col_lines='red',col_verts='lightblue',plot=TRUE,add='min')
+  draw.tpolytope.3d(P_star,col_lines='red',col_verts='lightblue',plot=TRUE,tadd=min)
   expect_true(TRUE)
 })

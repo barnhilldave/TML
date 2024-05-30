@@ -4,13 +4,13 @@
 \alias{tdets}
 \title{Calculate the tropical determinant of a square matrix.}
 \usage{
-tdets(P, add = "max")
+tdets(P, tadd = max)
 }
 \arguments{
 \item{P}{matrix of points defining a tropical polytope. Rows are the points}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
-min-plus addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates
+min-plus addition. Defaults to max}
 }
 \value{
 list containing the value of the determinant and reordered matrix P
@@ -22,7 +22,7 @@ square matrix
 \examples{
 P<-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 tdets(P)
-tdets(P,add='min')
+tdets(P,tadd=min)
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

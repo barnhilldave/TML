@@ -4,7 +4,7 @@
 \alias{VE.HAR}
 \title{Vertex HAR with extrapolation (VHE) MCMC with uniform target distribution}
 \usage{
-VE.HAR(D_s, x0, I = 1, add = "max")
+VE.HAR(D_s, x0, I = 1, tadd = max)
 }
 \arguments{
 \item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex}
@@ -13,7 +13,7 @@ VE.HAR(D_s, x0, I = 1, add = "max")
 
 \item{I}{number of states in Markov chain}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates min-plus addition. Defaults to max}
 }
 \value{
 next sampled point from the tropical polytope
@@ -25,7 +25,7 @@ This function samples points uniformly the space defined by a tropical simplex
 D_s <-matrix(c(0,0,0,0,10,0,0,0,10),3,3,TRUE)
 x0 <- c(0,0,0)
 VE.HAR(D_s, x0, I = 50)
-VE.HAR(D_s, x0, I = 50,add='min')
+VE.HAR(D_s, x0, I = 50,tadd=min)
 }
 \references{
 Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and Run Sampling from Tropically Convex Sets.

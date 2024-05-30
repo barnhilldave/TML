@@ -4,13 +4,13 @@
 \alias{Tropical.HC.AGNES}
 \title{Agglomerative (AGNES) tropical hierarchical clustering}
 \usage{
-Tropical.HC.AGNES(D, method = "average")
+Tropical.HC.AGNES(D, method = mean)
 }
 \arguments{
 \item{D}{matrix of points defining a tropical polytope.  Rows are the
 tropical points}
 
-\item{method}{linkage method: "average", "min", or "max"}
+\item{method}{linkage method: mean, min, or max}
 }
 \value{
 list of distances in when merges occur; list of indices of points in
@@ -22,7 +22,7 @@ space of ultrametrics defining the space of equidistant trees
 }
 \examples{
 \donttest{P <-Sim_points
-Tropical.HC.AGNES(P, method="average")
+Tropical.HC.AGNES(P, method=mean)
 }
 }
 \references{

@@ -19,9 +19,9 @@ test_that("Get max-tropical ball vertices ", {
   mat1<-mat
   for (t in 1:nrow(mat)){
     for(n in 1:nrow(mat)){
-    if(all(mat[t,]==V[n,])){
-      mat1[n,]<-mat[t,]
-    }
+      if(all(mat[t,]==V[n,])){
+        mat1[n,]<-mat[t,]
+      }
     }
   }
   expect_equal(V, mat1)
@@ -47,7 +47,7 @@ test_that("Get all tropical ball vertices ", {
   }
   mate<-rbind(mat1,mat2)
   dimnames(mate)<-NULL
-  V<-trop.bal.vert(v_star,r,add='all')
+  V<-trop.bal.all_vert(v_star,r)
   dimnames(V)<-NULL
   inds<-c()
   mate1<-mate

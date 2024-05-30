@@ -4,13 +4,13 @@
 \alias{trop_wi_dist}
 \title{Tropical within-cluster measure}
 \usage{
-trop_wi_dist(D1, method = "avg")
+trop_wi_dist(D1, method = mean)
 }
 \arguments{
 \item{D1}{matrix of tropical points; rows are points}
 
-\item{method}{metric to measure; "avg" is the average pairwise tropical
-distance; "max" is the maximum pairwise tropical distance}
+\item{method}{function; metric to measure; mean is the average pairwise tropical
+distance; max is the maximum pairwise tropical distance}
 }
 \value{
 within cluster measure
@@ -21,8 +21,8 @@ tropical distance between points in the cluster.
 }
 \examples{
 D<-Sim_points
-avg.m<-trop_wi_dist(D, method='avg')
-max.m<-trop_wi_dist(D, method='avg')
+avg.m<-trop_wi_dist(D, method=mean)
+max.m<-trop_wi_dist(D, method=max)
 }
 \references{
 David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over

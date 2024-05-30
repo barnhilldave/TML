@@ -4,14 +4,14 @@
 \alias{cluster.ratio_KM}
 \title{Ratio of within and between tropical measures for k-means clusters}
 \usage{
-cluster.ratio_KM(A, C, method = "avg")
+cluster.ratio_KM(A, C, method = mean)
 }
 \arguments{
 \item{A}{matrix of tropical points; rows are points}
 
 \item{C}{number of clusters}
 
-\item{method}{method to use for within cluster measure; "avg" or "max"}
+\item{method}{method to use for within cluster measure; mean or max}
 }
 \value{
 vector of ratios for each cluster
@@ -27,7 +27,7 @@ cls<-c(rep(1,50),rep(2,50),rep(3,50))
 cl_pt<-cbind(hars,cls)
 
 C<-3
-cluster.ratio_KM(cl_pt,C,method='avg')
+cluster.ratio_KM(cl_pt,C,method=mean)
 }
 \references{
 David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over

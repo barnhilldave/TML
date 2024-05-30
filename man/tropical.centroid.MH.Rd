@@ -6,9 +6,9 @@
 \alias{trop.centroid.MH.square}
 \title{Centroid-based sampling using Metropolis filter}
 \usage{
-trop.centroid.MH(D, x0, m, s, n, I = 50, add = "max")
+trop.centroid.MH(D, x0, m, s, n, I = 50, tadd = max)
 
-trop.centroid.MH.square(D, x0, m, s, n, I = 50, add = "max")
+trop.centroid.MH.square(D, x0, m, s, n, I = 50, tadd = max)
 }
 \arguments{
 \item{D}{matrix of vertices of a tropical polytope; each row is a vertex}
@@ -23,8 +23,8 @@ trop.centroid.MH.square(D, x0, m, s, n, I = 50, add = "max")
 
 \item{I}{states in Markov chain}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
-min-plus addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates
+min-plus addition. Defaults to max}
 }
 \value{
 matrix of n sampled points where each point is a row
@@ -43,8 +43,8 @@ s<-1
 n<-10
 trop.centroid.MH(D1, x0, m1, s, n, I=50)
 trop.centroid.MH.square(D1, x0,m1, s, n, I=50)
-trop.centroid.MH(D2, x0, m1, s, n, I=50,add='min')
-trop.centroid.MH.square(D2, x0,m2, s, n, I=50,add='min')
+trop.centroid.MH(D2, x0, m1, s, n, I=50,tadd=min)
+trop.centroid.MH.square(D2, x0,m2, s, n, I=50,tadd=min)
 }
 \references{
 Yoshida, Ruriko, Keiji Miura and David Barnhill (2022). Hit and

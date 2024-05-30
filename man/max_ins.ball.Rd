@@ -5,13 +5,13 @@
 \title{Calculate the center point and radius of the maximum inscribed ball for a
 tropical simplex}
 \usage{
-max_ins.ball(A, add = "max")
+max_ins.ball(A, tadd = max)
 }
 \arguments{
 \item{A}{matrix of points defining a tropical polytope; rows are the points}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
-min-plus addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates
+min-plus addition. Defaults to max}
 }
 \value{
 list containing the radius and center point of a maximum inscribed
@@ -24,7 +24,7 @@ ball for a max- or min-plus tropical simplex
 \examples{
 P<-matrix(c(0,0,0,0,2,5,0,3,1),3,3,TRUE)
 max_ins.ball(P)
-max_ins.ball(P,add='min')
+max_ins.ball(P,tadd=min)
 }
 \references{
 Barnhill, David, Ruriko Yoshida and Keiji Miura (2023). Maximum

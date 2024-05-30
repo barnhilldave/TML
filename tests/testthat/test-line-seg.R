@@ -15,8 +15,8 @@ test_that("max-tropical line segment", {
                    xL2-xL2[1],
                    xL1-xL1[1]
                  )
-                 )
                )
+  )
 })
 
 test_that("min-tropical line segment", {
@@ -28,7 +28,7 @@ test_that("min-tropical line segment", {
   xL2 <- apply(cbind(L[,2],x),1,function(z) min(z))
   xL3 <- apply(cbind(L[,3],x),1,function(z) min(z))
   xL4 <- apply(cbind(L[,4],x),1,function(z) min(z))
-  expect_equal(TLineSeg(x,y,add='min'),
+  expect_equal(TLineSeg(x,y,tadd=min),
                structure(
                  list(
                    xL1-xL1[1],

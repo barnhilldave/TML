@@ -5,7 +5,7 @@
 #'
 #' @param D matrix of points defining a tropical polytope.  Rows are the
 #'   tropical points
-#' @param method linkage method: "average", "min", or "max"
+#' @param method linkage method: mean, min, or max
 #' @return list of distances in when merges occur; list of indices of points in
 #'   each cluster
 #' @author David Barnhill \email{david.barnhill@@nps.edu}
@@ -14,11 +14,11 @@
 #' @export
 #' @examples
 #' \donttest{P <-Sim_points
-#' Tropical.HC.AGNES(P, method="average")
+#' Tropical.HC.AGNES(P, method=mean)
 #' }
 
-Tropical.HC.AGNES <- function(D, method="average"){
-  ### method is one of "average", "min", "max"
+Tropical.HC.AGNES <- function(D, method=mean){
+  ### method is one of `mean`, `min`, `max`
   d <- dim(D)
   distance <- rep(0, d[1])
   index.list <- list()

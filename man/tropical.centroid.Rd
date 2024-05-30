@@ -5,7 +5,7 @@
 \alias{VE.HAR.centroid}
 \title{Tropical centroid-based sampling about a center of mass}
 \usage{
-VE.HAR.centroid(D_s, x0, I = 1, m, s, add = "max")
+VE.HAR.centroid(D_s, x0, I = 1, m, s, tadd = max)
 }
 \arguments{
 \item{D_s}{matrix of vertices of a tropical simplex; each row is a vertex}
@@ -18,8 +18,8 @@ VE.HAR.centroid(D_s, x0, I = 1, m, s, add = "max")
 
 \item{s}{scale parameter; in terms of tropical distance}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates
-min-plus addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates
+min-plus addition. Defaults to max}
 }
 \value{
 next sampled point from the tropical polytope
@@ -35,7 +35,7 @@ x0 <- c(0,0,0)
 m <- c(0,5,5)
 s <- 1
 VE.HAR.centroid(D_s, x0, I = 50,m,s)
-VE.HAR.centroid(D_s, x0, I = 50,m,s,add='min')
+VE.HAR.centroid(D_s, x0, I = 50,m,s,tadd=min)
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

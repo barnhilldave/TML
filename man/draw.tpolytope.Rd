@@ -6,9 +6,9 @@
 \alias{draw.tpolytope.2d}
 \title{Draw a 2-D or 3-D tropical polytope}
 \usage{
-draw.tpolytope.3d(D, col_lines, col_verts, plot = TRUE, add = "max")
+draw.tpolytope.3d(D, col_lines, col_verts, plot = TRUE, tadd = max)
 
-draw.tpolytope.2d(D, col_lines, col_verts, plot = TRUE, add = "max")
+draw.tpolytope.2d(D, col_lines, col_verts, plot = TRUE, tadd = max)
 }
 \arguments{
 \item{D}{matrix of vertices of a tropical polytope; rows are the vertices}
@@ -19,8 +19,8 @@ draw.tpolytope.2d(D, col_lines, col_verts, plot = TRUE, add = "max")
 
 \item{plot}{logical; initiate new plot visualization or not.}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus
-addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates min-plus
+addition. Defaults to max}
 }
 \value{
 2-D or 3-D rendering of a tropical polytope.
@@ -33,13 +33,13 @@ D <-matrix(c(0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1),4,4,TRUE)
 col_lines<-'blue'
 col_verts<-'red'
 draw.tpolytope.3d(D,col_lines,col_verts,plot=TRUE)
-draw.tpolytope.3d(D,col_lines,col_verts,plot=TRUE,add='min')
+draw.tpolytope.3d(D,col_lines,col_verts,plot=TRUE,tadd=min)
 
 D <- matrix(c(0,-2,2,0,-2,5,0,2,1,0,1,-1),4,3,TRUE)
 col_lines <- 'blue'
 col_verts <- 'red'
 draw.tpolytope.2d(D,col_lines,col_verts,plot=TRUE)
-draw.tpolytope.2d(D,col_lines,col_verts,plot=TRUE,add='min')
+draw.tpolytope.2d(D,col_lines,col_verts,plot=TRUE,tadd=min)
 
 }
 \author{

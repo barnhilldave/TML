@@ -12,5 +12,5 @@ test_that("Max-Tropical Determinant",{
 test_that("Min-Tropical Determinant",{
   P<-matrix(c(0,4,2,0,3,7,0,6,1),3,3,TRUE)
   D<-lp.assign(P)
-  expect_equal(tdets(P,add='min')[[1]], D$objval)
+  expect_equal(tdets(P,tadd=min)[[1]], D$objval)
 })

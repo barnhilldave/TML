@@ -5,14 +5,14 @@
 \title{Ratio of within and between tropical measures for tropical hierarchical
 clusters}
 \usage{
-cluster.ratio_HC(A, V, method = "avg")
+cluster.ratio_HC(A, V, method = mean)
 }
 \arguments{
 \item{A}{matrix of tropical points; rows are points}
 
 \item{V}{list of clusters where each cluster is defined as a matrix}
 
-\item{method}{method to use for within cluster measure; "avg" or "max"}
+\item{method}{method to use for within cluster measure; mean or max}
 }
 \value{
 vector of ratios for each cluster
@@ -24,9 +24,9 @@ clusters
 \examples{
 har<-rbind(Sim_points[1:20,],Sim_points[51:70,])
 
-V<-Tropical.HC.AGNES(har, method="average")
+V<-Tropical.HC.AGNES(har, method=mean)
 inds<-V[[2]][[38]]
-cluster.ratio_HC(har,inds,method='avg')
+cluster.ratio_HC(har,inds,method=mean)
 }
 \references{
 David Barnhill, Ruriko Yoshida (2023). Clustering Methods Over

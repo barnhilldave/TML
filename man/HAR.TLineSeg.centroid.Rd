@@ -4,7 +4,7 @@
 \alias{HAR.TLineSeg.centroid}
 \title{Gaussian-like Sampling on a max- or min-plus tropical line segment}
 \usage{
-HAR.TLineSeg.centroid(D1, D2, m, s, add = "max")
+HAR.TLineSeg.centroid(D1, D2, m, s, tadd = max)
 }
 \arguments{
 \item{D1}{point in the tropical projective torus}
@@ -15,8 +15,8 @@ HAR.TLineSeg.centroid(D1, D2, m, s, add = "max")
 
 \item{s}{scale parameter}
 
-\item{add}{string; 'max' indicates max-plus addition, 'min' indicates min-plus
-addition. Defaults to 'max'}
+\item{tadd}{function; max indicates max-plus addition, min indicates min-plus
+addition. Defaults to max}
 }
 \value{
 point on the line segment defined by D1 and D2 sampled about mu
@@ -31,7 +31,7 @@ D2 <- c(0,7,-1)
 m<-c(0,7,2)
 s<-1
 HAR.TLineSeg.centroid(D1, D2,m,s)
-HAR.TLineSeg.centroid(D1, D2,m,s,add='min')
+HAR.TLineSeg.centroid(D1, D2,m,s,tadd=min)
 }
 \author{
 David Barnhill \email{david.barnhill@nps.edu}

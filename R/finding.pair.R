@@ -8,22 +8,22 @@
 #' @author Ruriko Yoshida \email{ryoshida@@nps.edu}
 #' @noRd
 
-finding.pair <- function(D1, method="average"){
+finding.pair <- function(D1, method=mean){
   ## D1 is a list of matrices.
-  ### method is one of "average", "min", "max"
+  ### method is one of `mean`, `min`, `max`
   d1 <- length(D1)
   best.pair.index <- c(1, 2)
   d.star <- tropical.average.linkage(D1[[1]], D1[[2]]) + 100000
   for(i in 1:d1)
     for(j in 1:d1){
       d <- d.star
-      if(method == "average")
+      if(identical(method, base::mean))
         if(i != j)
           d <- tropical.average.linkage(D1[[i]], D1[[j]])
-      if(method == "min")
+      if(identical(method, base::min))
         if(i != j)
           d <- tropical.minimum.linkage(D1[[i]], D1[[j]])
-      if(method == "max")
+      if(identical(method, base::max))
         if(i != j)
           d <- tropical.complete.linkage(D1[[i]], D1[[j]])
       if(d < d.star){
