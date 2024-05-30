@@ -21,33 +21,27 @@ VE.HAR <- function(D_s, x0, I = 1, tadd=max){
   d <- dim(D_s) # dimension of matrix of vertices
   D <- normaliz.polytope(D_s) #D_s
   D_bp<-D
+  ntadd <- if (identical(tadd , base::max)) min else max
   x <- normaliz.vector(x0) #normalize x0
-
   for(i in 1:I){
     x1 <- x
     v <- x
     u <- x
     ind<-seq(1,d[1])
-
     (index <- sample(ind, k)) # Randomly choose k vertices
     U <- D[index,] # Subset U
     V <- D[-index,] # Complement of U
-
-    # If subset k=1 then this is just a vertex the projection of x0 on a vertex is just the vertex
-    if(k == 1) u <- U
-    # If k > 1 project x0 onto the polytope defined by the subset of vertices
-    else u <- project.pi(U, x1, tadd=tadd)
-
-    # If the cardinality of U is e-1 the complement is just the leftover vertex
-    if(k == (d[1] - 1)) v <- V
-    # Otherwise it is a projection
-    else v <- project.pi(V, x1, tadd=tadd)
-
-    # Get unique bendpoints in a tropical line
-    Gam <- unique(TLineSeg(v,u, tadd = tadd))
-    # Normalize the bendpoints
-    bps <- normaliz.polytope(matrix(unlist(Gam),length(Gam),d[2],byrow=TRUE))
-
+    if(k == 1) # If subset k=1 then this is just a vertex
+      u <- U   # the projection of x0 on a vertex is just the vertex
+    else{
+      u <- project.pi(U, x1,tadd=tadd) # If k>1 project x0 onto the polytope
+    }                      # defined by the subset of vertices
+    if(k == (d[1] - 1)) # If the cardinality of U is e-1
+      v <- V            # the complement is just the leftover vertex
+    else
+      v <- project.pi(V, x1,tadd=tadd) # Otherwise it is a projection
+    Gam<-unique(TLineSeg(v,u,tadd=tadd)) # Get unique bendpoints in a tropical line
+    bps<-normaliz.polytope(matrix(unlist(Gam),length(Gam),d[2],byrow=TRUE)) # Normalize the bendpoints
     # We calculate the tropical distance of the bendpoints (not the end points) of the tropical
     # line segment to each boundary vertex defining a hyperplane.
     # If there is more than one bendpoint, calculate the distance of each one.  If not then just
@@ -58,27 +52,24 @@ VE.HAR <- function(D_s, x0, I = 1, tadd=max){
       t=0
       while (t <nrow(bp)){
         t=t+1
-
-        # Calculates distance of bend point to all vertices
-        dists<-as.vector(apply(D,1,function(x) trop.hyper.dist(-x,bp[t,],tadd=tadd)))
-
-        if(all(dists>1e-8)) l<-rbind(l,bp[t,])
+        dists<-as.vector(apply(D,1,function(x) trop.hyper.dist(-x,bp[t,],tadd=ntadd))) # Calculates distance of bend point to all vertices
+        if(all(dists>1e-8)){
+          l<-rbind(l,bp[t,])
+        }
         else{
           l<-rbind(l,bp[t,]) # If there is a zero add the point and then exit the loop.
           break
         }
       }
-      x<-HAR.TLineSeg(l[1,], l[nrow(l),], tadd=tadd) # Conduct HAR on line segment between u and the last bendpoint.
+      x<-HAR.TLineSeg(l[1,], l[nrow(l),],tadd=tadd) # Conduct HAR on line segment between u and the last bendpoint.
       x<-normaliz.vector(x)
     }
     else{
-      x<-HAR.TLineSeg(u,v, tadd=tadd) # Conduct HAR if there are no bendpoints.
+      x<-HAR.TLineSeg(u,v,tadd=tadd) # Conduct HAR if there are no bendpoints.
       x<-normaliz.vector(x)
     }
   }
-
   return(normaliz.vector(x))
 }
-
 
 
