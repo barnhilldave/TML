@@ -16,7 +16,7 @@
 #' VE.HAR(D_s, x0, I = 50)
 #' VE.HAR(D_s, x0, I = 50,tadd=min)
 
-VE.HAR <- function(D_s, x0, I = 1, tadd=max){
+VE.HAR <- function(D_s, x0, I = 1,tadd=max){
   k<-ncol(D_s)-1
   d <- dim(D_s) # dimension of matrix of vertices
   D <- normaliz.polytope(D_s) #D_s
@@ -71,5 +71,6 @@ VE.HAR <- function(D_s, x0, I = 1, tadd=max){
   }
   return(normaliz.vector(x))
 }
+
 
 
